@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- this will be a single-column website -->
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- link responsive layout -->
+        <link rel="stylesheet" href="responsive.css" media="screen">
+
+        <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+    
+            body {
+                background-color: white;
+                font-family: 'Spectral';
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            #home-img {
+                position: fixed;
+                right: 16px;
+                top: 16px;
+            }
+
+            #email {
+                color: black;
+                text-decoration: none;
+            }
+
+            #rotate-alert {
+                display: block;
+                margin-top: 16px;
+            }
+    
+            #sidebar-nav {
+                color: black;
+                font-family: Spectral;
+                font-size: 10px;
+                padding: 10px;
+                position: fixed;
+                right: 0;
+                text-orientation: sideways;
+                top: 50%;
+                transform: translateY(-50%);
+                writing-mode: vertical-rl;
+            }
+
+            #vector-title {
+                position: relative;
+                top: 8em;
+            }
+
+            a.nav {
+                color: black;
+                text-decoration: none;
+            }
+
+            div.footer-icons {
+                align-items: center;
+                display: flex;
+                gap: 32px;
+                justify-content: center;
+            }
+
+            div.horizontal-scroll {
+                align-items: center;
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 16px;
+                margin-top: 2em;
+                overflow-x: auto;
+                scrollbar-width: none;
+                width: 88%;
+            }
+        
+            div.horizontal-scroll::-webkit-scrollbar {
+                display: none;
+            }
+
+            div.info-cards {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            div.overview-card {
+                flex: 0 0 auto;
+                filter: drop-shadow(-2px 2px 2px #babcbe);
+                margin-top: 40px;
+            }
+
+            div.project-cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        </style>
+        <!-- text in browser tab -->
+        <title>frncscccvl.com</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/svg" href="images/ux_favicon.svg"/>
+        <link rel="apple-touch-icon" href="images/ux_favicon_180px.svg"/>
+    </head>
+
+    <body> 
+        <a id="home-img" href="https://www.frncscccvl.com">
+            <img src="images/_fc.svg" alt="home">
+        </a>
+
+        <a id="vector-title">
+            <center><img src="images/title.svg">
+        </a>
+
+        <!-- project cards -->
+        <div class="project-cards">
+            <!-- desktop -->
+            <a class="desktop-project-card" href="#case-study-a">
+                <img src="images/ucf-icon.svg" alt="ucf.pdf" title="ucf.pdf"/>
+            </a>
+            
+            <a class="desktop-project-card" href="#case-study-b">
+                <img src="images/portfolio-icon.svg" alt="portfolio.pdf" title="portfolio.pdf"/>
+            </a> 
+
+            <a class="desktop-project-card" href="#case-study-c">
+                <img src="images/blurate-icon.svg" alt="blurate.pdf" title="blurate.pdf"/>
+            </a>
+            <!-- mobile -->
+            <a class="mobile-project-card" href="documents/mobile-ucf.pdf" download>
+                <img src="images/ucf-icon.svg" alt="ucf.pdf, 1MB" title="ucf.pdf, 1MB"/>
+            </a>
+
+            <a class="mobile-project-card" href="documents/mobile-portfolio.pdf" download>
+                <img src="images/portfolio-icon.svg" alt="portfolio.pdf, 1.1MB" title="portfolio.pdf, 1.1MB"/>
+            </a>
+
+            <a class="mobile-project-card" href="documents/mobile-blurate.pdf" download>
+                <img src="images/blurate-icon.svg" alt="blurate.pdf, 1.1MB" title="blurate.pdf, 1.1MB"/>
+            </a>
+        </div>           
+
+        <!-- navigation element --> 
+        <p id="sidebar-nav">
+            <a class="nav" href="#PHILOSOPHY">PHILOSOPHY</a> &nbsp; &#183; &nbsp;
+            <a class="nav" href="#ABOUT">ABOUT</a> &nbsp; &#183; &nbsp;
+            <a class="nav" href="documents/cv.pdf" download>CV</a> &nbsp; &#183; &nbsp;
+            <a class="nav" target="_blank" href="https://github.com/frncscccvl">GITHUB</a> &nbsp; &#183; &nbsp;
+            <a class="nav" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing">POETRY</a>    
+        </p>
+
+        <!-- mobile element -->
+        <a id="arrow-icon">
+            <center><img src="images/arrow-icon.svg">
+        </a>
+
+        <section id="PHILOSOPHY">
+            <br><br>
+
+            <a id="intro-img">
+                <center><img src="images/intro-graphic.svg">
+            </a>
+
+            <a id="mobile-intro">
+                <center><img src="images/mobile-intro-graphic.svg">
+            </a>
+
+            <div class="info-cards">
+                <img src="images/info-card-a.svg"/>
+                <img src="images/info-card-b.svg"/>
+                <img src="images/info-card-c.svg"/>
+            </div>
+        </section>
+
+        <!-- CASE STUDY A - horizontal scroll -->
+        <section id="case-study-b">
+            <div class="horizontal-scroll">
+                <div class="overview-card">
+                    <img src="images/portfolio-intro.svg">
+                </div>
+        
+                <div class="overview-card">
+                    <img src="images/portfolio-user-research.svg">
+                </div>
+ 
+                <div class="overview-card">
+                    <img src="images/portfolio-low-fidelity.svg">
+                </div>
+
+                <div class="overview-card">
+                    <img src="images/portfolio-wrap.svg">
+                </div>
+
+                <div class="overview-card"> 
+                    <a href="documents/portfolio.pdf" download> 
+                        <img src="images/portfolio-download.svg"/> 
+                    </a> 
+                </div>
+             </div>
+
+            <a id="rotate-alert">
+                <center><img src="images/screen-rotation.svg"/>
+            </a>
+        </section>
+        
+        <!-- CASE STUDY B - horizontal scroll -->
+        <section id="case-study-a">
+            <div class="horizontal-scroll">
+                <div class="overview-card">
+                    <img src="images/ucf-intro.svg">
+                </div>
+
+                <div class="overview-card">
+                    <img src="images/ucf-ideation.svg">
+                </div>
+
+                <div class="overview-card">
+                    <img src="images/ucf-low-fidelity.svg">
+                </div>
+
+                <div class="overview-card">
+                    <img src="images/ucf-mock-ups.svg">
+                </div>
+
+                <div class="overview-card">
+                    <img src="images/ucf-prototype.svg">
+                </div>
+
+                <div class="overview-card"> 
+                    <a href="documents/ucf.pdf" download>
+                        <img src="images/ucf-download.svg"/> 
+                    </a>
+                </div>
+            </div>
+
+            <a id="rotate-alert">
+                <center><img src="images/screen-rotation.svg"/>
+            </a>
+        </section>
+
+        <!-- CASE STUDY C - horizontal scroll -->
+        <section id="case-study-c">
+            <div class="horizontal-scroll">
+                <div class="overview-card">
+                    <img src="images/blurate-intro.svg"/>
+                </div>
+
+                <div class="overview-card"> 
+                    <a href="documents/blurate.pdf" download>
+                        <img src="images/blurate-download.svg"/> 
+                    </a>
+                </div>
+             </div>
+
+            <a id="rotate-alert">
+                <center><img src="images/screen-rotation.svg"/>
+            </a>        
+        </section>
+
+        <section id="ABOUT">
+            <!-- todo: in the meantime, the 'about' section will scroll to contact information. -->
+        </section>
+
+    </body>
+
+    <br>
+
+    <footer>
+        <p><center><a id="email" href="mailto:francis.caccavale@gmail.com">FRANCIS.CACCAVALE@GMAIL.COM</a></p>
+        
+        <div class="footer-icons">
+
+            <a id="google-docs-icon" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing">
+                <img src="images/google-docs-icon.svg" alt="Peasantries: an introductory" title="Peasantries: An Introductory">
+            </a>
+            
+            <a id="figma-icon" target="_blank" href="https://www.figma.com/file/YjoaYZksEghmnrzFOmnsQ5/Portfolio?node-id=9%3A3">
+                <img src="images/figma-icon.svg" alt="*Observe a design in real-time. *Figma account required" title="*Observe a design in real-time. *Figma account required">
+            </a>
+     
+            <a id="google-icon" target="_blank" href="https://www.google.com/search?q=what+is+ux+design%3F&rlz=1CAKDZI_enUS944&oq=what+is+&aqs=chrome.0.69i59j69i57j35i39j0i512j0i131i433j0i433i512j46i512j69i60.1212j0j7&sourceid=chrome&ie=UTF-8">
+                <img src="images/google-icon.svg" alt="What is UX design?" title="What is UX design?">
+            </a>
+
+            <a id="pdf-icon" target="_blank" href="documents/cv.pdf" download>
+                <img src="images/pdf-icon.svg" alt="CV" title="CV">
+            </a>
+
+        </div>
+
+        <!-- <p><center>&copy; 2022 FRANCIS CACCAVALE</p> -->
+    </footer>
+
+</html>

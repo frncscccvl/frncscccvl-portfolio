@@ -1,0 +1,103 @@
+@media screen and (max-width: 800px) {
+    #arrow-icon {
+        display: block;
+        margin-top: 4em;
+    }
+
+    #case-study-a {
+        display: none !important;
+    }
+
+    #case-study-b {
+        display: none !important;
+    }
+
+    #case-study-c {
+        display: none !important;
+    }
+               
+    #figma-icon {
+        display: none;
+    }
+                
+    #sidebar-nav {
+        display: none;
+    }
+ 
+    #intro-img {
+        display: none;
+    }
+                
+    #mobile-intro {
+        display: block;
+        margin-bottom: 2em;
+        margin-top: 4em;
+    }
+            
+    div.info-cards {                 
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    .desktop-project-card {
+        display: none;
+    }
+
+    div.project-cards {
+        margin-bottom: 1em;
+        margin-top: 8em;
+    }
+
+    footer {
+        
+    }                                
+}
+
+@media screen and (min-width: 801px) {
+    #arrow-icon {
+        display: none;
+    }
+
+    #google-docs-icon {
+        display: none;
+    }
+
+    #pdf-icon {
+        display: none;
+    }
+
+    #mobile-intro {
+        display: none;
+    }
+
+    div.info-cards {
+        margin-bottom: 1em;
+        margin-top: 4em;
+        gap: 88px;
+    }
+
+    .mobile-project-card {
+        display: none;
+    }
+
+    div.project-cards {
+        margin-bottom: 4em;
+        margin-top: 8em;
+    }
+
+    footer {
+       
+    }
+}
+
+@media (orientation: landscape) {
+    #rotate-alert {
+        display: none !important;
+    }
+}
+
+@media (orientation: portrait) {
+    
+}
+
+
