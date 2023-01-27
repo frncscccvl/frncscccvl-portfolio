@@ -1,23 +1,11 @@
 @media screen and (max-width: 800px) {
     #arrow-icon {
         display: block;
-        margin-top: 4em;
+        margin-top: 3em;
     }
 
     #ABOUT {
         display: none !important;
-    }
-
-    /*#case-study-b {
-        display: none !important;
-    }*/
-
-    /*#case-study-c {
-        display: none !important;
-    }*/
-               
-    #figma-icon {
-        display: none;
     }
 
     #home-img {
@@ -35,7 +23,7 @@
     #mobile-intro {
         display: block;
         margin-bottom: 2em;
-        margin-top: 4em;
+        margin-top: 2em;
     }
             
     div.info-cards {                 
@@ -47,9 +35,13 @@
         display: none;
     }
 
-    div.project-cards {
+    div.project-cards-mobile {
         margin-bottom: 1em;
-        margin-top: 8em;
+        margin-top: 6.5em;
+    }
+        
+    div.project-cards-desktop {
+        display: none;
     }
 
     footer {
@@ -88,7 +80,11 @@
         display: none;
     }
 
-    div.project-cards {
+    div.project-cards-mobile {
+        display: none;
+    }
+
+    div.project-cards-desktop {
         margin-bottom: 4em;
         margin-top: 8em;
     }

@@ -64,7 +64,7 @@
 
             #vector-title {
                 position: relative;
-                top: 8em;
+                top: 6.5em;
             }
 
             a.nav {
@@ -106,10 +106,26 @@
                 margin-top: 40px;
             }
 
-            div.project-cards {
+            div.project-cards-desktop {
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
+            }
+
+            div.project-cards-mobile {
+                display: grid;
+                grid-template-columns: 156px 156px;
+                grid-template-rows: 156px 156px;
+                gap: 8px;
+                justify-content: space-evenly;
+                margin-left: auto;
+                margin-right: auto;
+                width: 312px;
+            }
+    
+            div.mobile-project-card {
+                width: 50%;
+                height: 50%;
             }
 
         </style>
@@ -133,8 +149,8 @@
             <center><img src="images/title.svg">
         </a>
 
-        <!-- project cards -->
-        <div class="project-cards">
+        <!-- project cards (desktop) -->
+        <div class="project-cards-desktop">
             <!-- desktop -->
             <a class="desktop-project-card" href="documents/ucf.pdf" download>
                 <img src="images/ucf-icon.svg" alt="ucf.pdf" title="ucf.pdf"/>
@@ -147,9 +163,16 @@
             <a class="desktop-project-card" href="documents/blurate.pdf" download>
                 <img src="images/blurate-icon.svg" alt="blurate.pdf" title="blurate.pdf"/>
             </a>
+        </div>
+        <!-- project cards (mobile) -->
+        <div class="project-cards-mobile">
             <!-- mobile -->
             <a class="mobile-project-card" href="documents/mobile-ucf.pdf" download>
                 <img src="images/ucf-icon.svg" alt="ucf.pdf, 1MB" title="ucf.pdf, 1MB"/>
+            </a>
+
+            <a class="mobile-project-card" href="documents/mobile-blurate.pdf" download>
+                <img src="images/blurate-icon.svg" alt="blurate.pdf, 1.1MB" title="blurate.pdf, 1.1MB"/>
             </a>
 
             <a class="mobile-project-card" href="documents/mobile-portfolio.pdf" download>
@@ -157,7 +180,7 @@
             </a>
 
             <a class="mobile-project-card" href="documents/mobile-blurate.pdf" download>
-                <img src="images/blurate-icon.svg" alt="blurate.pdf, 1.1MB" title="blurate.pdf, 1.1MB"/>
+                <img src="images/notarybyagnes-icon.svg" alt="notarybyagnes.pdf, 1.1MB" title="notarybyagnes.pdf, 1.1MB"/>
             </a>
         </div>           
 
@@ -170,7 +193,7 @@
             <a class="nav" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing">POETRY</a>    
         </p>
         <!-- mobile element -->
-        <a id="arrow-icon" style="margin-bottom: 2.5em;">
+        <a id="arrow-icon" style="margin-bottom: 1.5em;">
             <center><img src="images/arrow-icon.svg">
         </a>
 
@@ -296,10 +319,6 @@
             
             <!-- <a id="figma-icon" target="_blank" href="https://www.figma.com/file/YjoaYZksEghmnrzFOmnsQ5/Portfolio?node-id=9%3A3">
                 <img src="images/figma-icon.svg" alt="*Observe a design in real-time. *Figma account required" title="*Observe a design in real-time. *Figma account required">
-            </a> -->
-     
-            <!-- <a id="google-icon" target="_blank" href="https://www.google.com/search?q=what+is+ux+design%3F&rlz=1CAKDZI_enUS944&oq=what+is+&aqs=chrome.0.69i59j69i57j35i39j0i512j0i131i433j0i433i512j46i512j69i60.1212j0j7&sourceid=chrome&ie=UTF-8">
-                <img src="images/google-icon.svg" alt="What is UX design?" title="What is UX design?">
             </a> -->
 
             <a id="cv-icon" target="_blank" href="documents/cv.pdf" download>
