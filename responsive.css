@@ -25,22 +25,17 @@
         margin-bottom: 2em;
         margin-top: 2em;
     }
-            
-    div.info-cards {                 
-        flex-direction: column;
-        gap: 44px;
-    }
 
     .desktop-project-card {
         display: none;
     }
 
-    div.project-cards-mobile {
+    .project-cards-mobile {
         margin-bottom: 1em;
         margin-top: 6.5em;
     }
         
-    div.project-cards-desktop {
+    .project-cards-desktop {
         display: none;
     }
 
@@ -55,7 +50,7 @@
     }
 
     #google-docs-icon {
-        display: none;
+        //display: none;
     }
 
     /*#cv-icon {
@@ -68,12 +63,6 @@
 
     #mobile-intro {
         display: none;
-    }
-
-    div.info-cards {
-        margin-bottom: 1em;
-        margin-top: 4em;
-        gap: 88px;
     }
 
     .mobile-project-card {
