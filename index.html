@@ -118,13 +118,11 @@
             }
 
             div.project-cards-desktop {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            div.project-cards-desktop {
-
+                display: grid;
+                grid-template-columns: 44% 44%;
+                grid-template-rows: 280px 280;
+                justify-content: space-evenly;
+                width: 66%;               
             }
 
             div.project-cards-mobile {
@@ -168,15 +166,19 @@
         <div class="project-cards-desktop">
             <!-- desktop -->
             <a class="desktop-project-card" href="documents/ucf.pdf" download>
-                <img src="images/ucf-icon.svg" alt="ucf.pdf" title="ucf.pdf"/>
+                <img src="images/ucf-icon-desktop.svg" alt="ucf.pdf" title="ucf.pdf"/>
+            </a>
+
+            <a class="desktop-project-card" href="documents/blurate.pdf" download>
+                <img src="images/blurate-icon-desktop.svg" alt="blurate.pdf" title="blurate.pdf"/>
             </a>
             
             <a class="desktop-project-card" href="#ABOUT">
-                <img src="images/portfolio-icon.svg" alt="portfolio.pdf" title="portfolio.pdf"/>
+                <img src="images/portfolio-icon-desktop.svg" alt="portfolio.pdf" title="portfolio.pdf"/>
             </a> 
 
-            <a class="desktop-project-card" href="documents/blurate.pdf" download>
-                <img src="images/blurate-icon.svg" alt="blurate.pdf" title="blurate.pdf"/>
+            <a class="desktop-project-card" href="documents/notarybyagnes.pdf" download>
+                <img src="images/notarybyagnes-icon-desktop.svg" alt="notarybyagnes.pdf, 1.3MB" title="notarybyagnes.pdf, 1.3MB"/>
             </a>
         </div>
         <!-- project cards (mobile) -->
@@ -194,8 +196,8 @@
                 <img src="images/portfolio-icon.svg" alt="portfolio.pdf, 1.1MB" title="portfolio.pdf, 1.1MB"/>
             </a>
 
-            <a class="mobile-project-card" href="documents/mobile-blurate.pdf" download>
-                <img src="images/notarybyagnes-icon.svg" alt="notarybyagnes.pdf, 1.1MB" title="notarybyagnes.pdf, 1.1MB"/>
+            <a class="mobile-project-card" href="documents/notarybyagnes-mobile.pdf" download>
+                <img src="images/notarybyagnes-icon.svg" alt="notarybyagnes.pdf, 1.3MB" title="notarybyagnes.pdf, 1.3MB"/>
             </a>
         </div>           
 
