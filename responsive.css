@@ -36,7 +36,7 @@
     }
         
     .project-cards-desktop {
-        display: none;
+        display: none !important;
     }
 
     footer {
@@ -65,6 +65,10 @@
         display: none;
     }
 
+    .info-cards-container {
+        display: none;
+    }
+
     .mobile-project-card {
         display: none;
     }
@@ -74,8 +78,8 @@
     }
 
     div.project-cards-desktop {
-        margin-bottom: 4em;
-        margin-top: 8em;
+        margin-bottom: 16px;
+        margin-top: 6.5em;
     }
 
     footer {
