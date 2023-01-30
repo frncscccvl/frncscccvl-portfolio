@@ -10,9 +10,9 @@
 
         <!-- link responsive layout -->
         <link rel="stylesheet" href="responsive.css" media="screen">
-        <!-- link 'Spectral' font courtest of Google -->
+        <!-- link 'Spectral' font courtesy of Google -->
         <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-        <!-- link image carousel utility -->        
+        <!-- link image carousel utility courtesy of Flickity -->        
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
@@ -87,7 +87,7 @@
                 display: flex;
                 flex-wrap: nowrap;
                 gap: 16px;
-                margin-top: 2em;
+                margin-top: 8px;
                 overflow-x: auto;
                 scrollbar-width: none;
                 width: 88%;
@@ -102,10 +102,23 @@
             }
 
             .info-cards-container {
+                //max-height: auto;
                 max-width: 400px;
             }
 
             .info-card-cell {
+                width: 100%;
+                //height: auto;
+                margin-right: 8px;
+            }
+
+            .info-cards-container-mobile {
+                margin-bottom: 16px;
+                margin-top: 16px;
+                max-width: 400px;
+            }
+
+            .info-card-cell-mobile {
                 width: 100%;
                 height: 238px;
                 margin-right: 8px;
@@ -114,15 +127,17 @@
             div.overview-card {
                 flex: 0 0 auto;
                 filter: drop-shadow(-2px 2px 2px #babcbe);
-                margin-top: 40px;
             }
 
             div.project-cards-desktop {
                 display: grid;
-                grid-template-columns: 44% 44%;
-                grid-template-rows: 280px 280px;
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 1fr;
                 justify-content: space-evenly;
-                width: 66%;               
+                column-gap: 8px;
+                row-gap: 0;
+                width: 88%;
+                height: auto;               
             }
 
             div.project-cards-mobile {
@@ -139,6 +154,15 @@
             div.mobile-project-card {
                 width: 50%;
                 height: 50%;
+            }
+
+            .philosophy-grid {
+                display: grid;
+                justify-content: space-evenly;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 296px;
+                width: 88%;
+                margin-top: 0;
             }
 
         </style>
@@ -203,7 +227,6 @@
 
         <!-- navigation element --> 
         <p id="sidebar-nav">
-            <a class="nav" href="#PHILOSOPHY">PHILOSOPHY</a> &nbsp; &#183; &nbsp;
             <a class="nav" href="#ABOUT">ABOUT</a> &nbsp; &#183; &nbsp;
             <a class="nav" href="documents/cv.pdf" download>CV</a> &nbsp; &#183; &nbsp;
             <a class="nav" target="_blank" href="https://github.com/frncscccvl">GITHUB</a> &nbsp; &#183; &nbsp;
@@ -214,25 +237,29 @@
             <center><img src="images/arrow-icon.svg">
         </a>
 
-        <section id="PHILOSOPHY">
-            <br>
-
-            <a id="mobile-intro">
-                <center><img src="images/mobile-intro-graphic.svg"/>
-            </a>
-
-            <br>
-
-            <div class="info-cards-container" data-flickity='{ "contain": true }'>
-                <div class="info-card-cell"> <img src="images/info-card-a.svg"/> </div>
-                <div class="info-card-cell"> <img src="images/info-card-b.svg"/> </div>
-                <div class="info-card-cell"> <img src="images/info-card-c.svg"/> </div>
+        <div class="philosophy-grid">
+            <div class="philosophy-cell">
+                <img src="images/intro-graphic-bw.svg"/>
             </div>
+               
+            <div class="info-cards-container" data-flickity='{ "pageDots": false, "contain": true }'>
+                <div class="info-card-cell"> <img src="images/info-card-desktop-a.svg"/> </div>
+                <div class="info-card-cell"> <img src="images/info-card-desktop-b.svg"/> </div>
+                <div class="info-card-cell"> <img src="images/info-card-desktop-c.svg"/> </div>
+            </div>
+        </div>
 
-            <br>
-        </section>
+        <a id="mobile-intro">
+            <br><center><img src="images/mobile-intro-graphic.svg"/><br><br>
+        </a>
 
-        <!-- CASE STUDY A - horizontal scroll -->
+        <div class="info-cards-container-mobile" data-flickity='{ "contain": true }'>
+            <div class="info-card-cell-mobile"> <img src="images/info-card-a.svg"/> </div>
+            <div class="info-card-cell-mobile"> <img src="images/info-card-b.svg"/> </div>
+            <div class="info-card-cell-mobile"> <img src="images/info-card-c.svg"/> </div>
+        </div>
+
+        <!-- CASE STUDY C - horizontal scroll -->
         <section id="ABOUT">
             <div class="horizontal-scroll">
                 <div class="overview-card">

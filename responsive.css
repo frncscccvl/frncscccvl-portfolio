@@ -26,6 +26,10 @@
         margin-top: 2em;
     }
 
+    .philosophy-grid {
+        display: none !important;
+    }
+
     .desktop-project-card {
         display: none;
     }
@@ -65,7 +69,7 @@
         display: none;
     }
 
-    .info-cards-container {
+    .info-cards-container-mobile {
         display: none;
     }
 
@@ -74,7 +78,7 @@
     }
 
     div.project-cards-mobile {
-        display: none;
+        display: none !important;
     }
 
     div.project-cards-desktop {
