@@ -4,7 +4,7 @@
         margin-top: 3em;
     }
 
-    #ABOUT {
+    #desktop-about {
         display: none !important;
     }
 
@@ -26,10 +26,6 @@
         margin-top: 2em;
     }
 
-    .philosophy-grid {
-        display: none !important;
-    }
-
     .desktop-project-card {
         display: none;
     }
@@ -37,10 +33,6 @@
     .project-cards-mobile {
         margin-bottom: 1em;
         margin-top: 6.5em;
-    }
-        
-    .project-cards-desktop {
-        display: none !important;
     }
 
     footer {
@@ -87,7 +79,7 @@
     }
 
     footer {
-       
+       display: none;
     }
 }
 
