@@ -1,10 +1,10 @@
-<svg width="743" height="304" viewBox="0 0 743 304" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="744" height="304" viewBox="0 0 744 304" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d_839_167)">
-<rect x="4" width="735" height="296" rx="16" fill="black"/>
+<rect x="4" width="736" height="296" rx="16" fill="black"/>
 </g>
-<rect x="289.25" width="164.062" height="296" rx="16" fill="url(#pattern0)"/>
+<rect x="290" width="164.062" height="296" rx="16" fill="url(#pattern0)"/>
 <defs>
-<filter id="filter0_d_839_167" x="0" y="0" width="743" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_839_167" x="0" y="0" width="744" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
