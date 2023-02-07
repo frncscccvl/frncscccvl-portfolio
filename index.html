@@ -17,10 +17,6 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
         <style>
-            html {
-                scroll-behavior: smooth;
-            }
-    
             body {
                 background-color: white;
                 font-family: 'Spectral';
@@ -47,7 +43,7 @@
                 text-decoration: none;
             }
     
-            #sidebar-nav {
+            /*#sidebar-nav {
                 color: black;
                 font-family: Spectral;
                 font-size: 10px;
@@ -58,7 +54,7 @@
                 top: 50%;
                 transform: translateY(-50%);
                 writing-mode: vertical-rl;
-            }
+            }*/
 
             #desktop-about {
                 align-items: center;
@@ -115,6 +111,18 @@
                 margin-right: 8px;
             }
 
+            div.experimental-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                right: 16px;
+                top: 50%;
+                gap: 8px;
+                transform: translateY(-50%);
+            }
+
             /*div.overview-card {
                 flex: 0 0 auto;
                 filter: drop-shadow(-2px 2px 2px #babcbe);
@@ -153,7 +161,7 @@
 
         <!-- favicon -->
         <link rel="icon" type="image/svg" href="images/ux_favicon.svg">
-        <link rel="apple-touch-icon" href="images/ux_favicon_180px.svg">
+        <link rel="apple-touch-icon" href="https://github.com/frncscccvl/frncscccvl-portfolio/blob/main/images/ux_favicon_180px.svg">
     </head>
 
     <body> 
@@ -215,12 +223,31 @@
         </div>
            
         <!-- navigation element --> 
-        <p id="sidebar-nav">
+        <p id="sidebar-nav" style="display: none;">
             <a class="nav" target="_blank" href="mailto:francis.caccavale@gmail.com">CONTACT</a> &nbsp; &#183; &nbsp;
             <a class="nav" href="documents/cv.pdf" download>CV</a> &nbsp; &#183; &nbsp;
             <a class="nav" target="_blank" href="https://github.com/frncscccvl">GITHUB</a> &nbsp; &#183; &nbsp;
             <a class="nav" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing">POETRY</a>    
         </p>
+
+        <!-- experimental navigation element -->
+        <div class="experimental-nav">
+            <a class="exp" target="_blank" href="mailto:francis.caccavale@gmail.com"> 
+                <img src="images/contact-icon-desktop.svg"/>
+            </a> <!-- &nbsp; &#183; &nbsp; -->
+    
+            <a class="exp" href="documents/cv.pdf" download>
+                <img src="images/cv-icon-desktop.svg"/>
+            </a> <!-- &nbsp; &#183; &nbsp; -->
+
+            <a class="exp" target="_blank" href="https://github.com/frncscccvl">
+                <img src="images/github-icon-desktop.svg"/>
+            </a> <!-- &nbsp; &#183; &nbsp; -->
+
+            <a class="exp" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing"> 
+                <img src="images/poetry-icon-desktop.svg"/>
+            </a>
+        </div>
 
         <!-- mobile element -->
         <a id="arrow-icon" style="margin-bottom: 1.5em;">

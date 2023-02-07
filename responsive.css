@@ -30,6 +30,10 @@
         display: none;
     }
 
+    .experimental-nav {
+        display: none;
+    }
+
     .project-cards-mobile {
         margin-bottom: 1em;
         margin-top: 6.5em;
