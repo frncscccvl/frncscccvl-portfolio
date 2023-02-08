@@ -30,7 +30,13 @@
         display: none;
     }
 
-    .experimental-nav {
+    div.experimental-nav {
+        display: none;
+
+      
+    }
+
+    .exp {
         display: none;
     }
 

@@ -68,9 +68,14 @@
                 top: 6.5em;
             }
 
-            a.nav {
+            /*a.nav {
                 color: black;
                 text-decoration: none;
+            }*/
+
+            a.exp {
+                //transform:scale(1);
+                //position: relative;
             }
 
             .footer-icons {
@@ -119,7 +124,7 @@
                 position: fixed;
                 right: 16px;
                 top: 50%;
-                gap: 8px;
+                gap: 4px;
                 transform: translateY(-50%);
             }
 
@@ -233,19 +238,19 @@
         <!-- experimental navigation element -->
         <div class="experimental-nav">
             <a class="exp" target="_blank" href="mailto:francis.caccavale@gmail.com"> 
-                <img src="images/contact-icon-desktop.svg"/>
+                <img src="images/contact-icon-desktop.svg" onmouseover="this.src='images/contact-icon-hover.svg';" onmouseout="this.src='images/contact-icon-desktop.svg';"/>
             </a> <!-- &nbsp; &#183; &nbsp; -->
     
             <a class="exp" href="documents/cv.pdf" download>
-                <img src="images/cv-icon-desktop.svg"/>
+                <img src="images/cv-icon-desktop.svg" onmouseover="this.src='images/cv-icon-hover.svg';" onmouseout="this.src='images/cv-icon-desktop.svg';"/>
             </a> <!-- &nbsp; &#183; &nbsp; -->
 
             <a class="exp" target="_blank" href="https://github.com/frncscccvl">
-                <img src="images/github-icon-desktop.svg"/>
+                <img src="images/github-icon-desktop.svg" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon-desktop.svg';"/>
             </a> <!-- &nbsp; &#183; &nbsp; -->
 
             <a class="exp" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing"> 
-                <img src="images/poetry-icon-desktop.svg"/>
+                <img src="images/poetry-icon-desktop.svg" onmouseover="this.src='images/poetry-icon-hover.svg';" onmouseout="this.src='images/poetry-icon-desktop.svg';"/>
             </a>
         </div>
 
