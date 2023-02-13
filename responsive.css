@@ -31,9 +31,7 @@
     }
 
     div.experimental-nav {
-        display: none;
-
-      
+        display: none;      
     }
 
     .exp {
@@ -54,14 +52,6 @@
     #arrow-icon {
         display: none;
     }
-
-    #google-docs-icon {
-        //display: none;
-    }
-
-    /*#cv-icon {
-        display: none;
-    }*/
 
     #mobile-home-img {
         display: none;
@@ -89,7 +79,7 @@
     }
 
     footer {
-       display: none;
+       display: none !important;
     }
 }
 
