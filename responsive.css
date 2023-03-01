@@ -11,10 +11,6 @@
     #home-img {
         display: none;
     }
-                
-    #sidebar-nav {
-        display: none;
-    }
  
     #intro-img {
         display: none;
@@ -90,7 +86,9 @@
 }
 
 @media (orientation: portrait) {
-    
+    div.experimental-nav {
+        display: none !imporant;
+    }
 }
 
 
