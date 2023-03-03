@@ -146,7 +146,7 @@
                 opacity: 0;
                 transform: translate(-50%, -50%);
             }
-    
+   
             div.mobile-project-card {
                 width: 50%;
                 height: 50%;
@@ -156,7 +156,10 @@
                 from { opacity: 0; }
                 to   { opacity: 1; }
             }
-            
+
+            #overlay {
+                display: none;
+            }
         </style>
 
         <!-- text in browser tab -->
@@ -220,6 +223,12 @@
             <center><img src="images/about-section.svg" alt="About" title="About"/>
         </a>
 
+        <div id="overlay">
+            <a>
+                <iframe src="grid.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;" onmouseout="document.getElementById('overlay').style.display='none';"></iframe>
+            </a>
+        </div>
+
         <!-- project cards (mobile) -->
         <div class="project-cards-mobile">
             <!-- mobile -->
@@ -242,20 +251,20 @@
 
         <!-- navigation element -->
         <div class="experimental-nav">
-            <a class="exp" target="_blank" href="mailto:hello@frncscccvl.com"> 
+            <a id="exp" target="_blank" href="mailto:hello@frncscccvl.com"> 
                 <img src="images/contact-icon-desktop.svg" onmouseover="this.src='images/contact-icon-hover.svg';" onmouseout="this.src='images/contact-icon-desktop.svg';"/>
             </a>
     
-            <a class="exp" href="documents/cv.pdf" download>
+            <a id="exp" href="documents/cv.pdf" download>
                 <img src="images/cv-icon-desktop.svg" onmouseover="this.src='images/cv-icon-hover.svg';" onmouseout="this.src='images/cv-icon-desktop.svg';"/>
             </a> 
 
-            <a class="exp" target="_blank" href="https://github.com/frncscccvl">
+            <a id="exp" target="_blank" href="https://github.com/frncscccvl">
                 <img src="images/github-icon-desktop.svg" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon-desktop.svg';"/>
             </a>
- 
-            <a class="exp" target="_blank" href="grid.html" onClick="window.open('grid.html', 'poetry', 'resizable, height=720,width=1000,left=360,top=360'); return false;"> 
-                <img src="images/poetry-icon-desktop.svg" onmouseover="this.src='images/poetry-icon-hover.svg';" onmouseout="this.src='images/poetry-icon-desktop.svg';"/>
+            
+            <a id="exp">
+                <img src="images/poetry-icon-desktop.svg" onmouseover="this.src='images/poetry-icon-hover.svg';" onmouseout="this.src='images/poetry-icon-desktop.svg';" onclick="document.getElementById('overlay').style.display='block';"/>
             </a>
         </div>
 
