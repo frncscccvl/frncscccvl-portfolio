@@ -22,6 +22,10 @@
                 font-family: 'Spectral';
             }
 
+            iframe {
+                margin: auto auto;
+            }
+
             img {
                 max-width: 100%;
             }
@@ -44,10 +48,8 @@
             }
 
             #desktop-about {
-                align-items: center;
-                display: flex;
-                width: 90%;
-                justify-content: center;
+                display: block;
+                width: 91%;
             }
 
             #vector-title {
@@ -61,21 +63,6 @@
                 gap: 32px;
                 justify-content: center;
             }
-
-            /*div.horizontal-scroll {
-                align-items: center;
-                display: flex;
-                flex-wrap: nowrap;
-                gap: 16px;
-                margin-top: 8px;
-                overflow-x: auto;
-                scrollbar-width: none;
-                width: 88%;
-            }*/
-        
-            /*div.horizontal-scroll::-webkit-scrollbar {
-                display: none;
-            }*/
 
             .flickity-prev-next-button:disabled {
                 display: none;
@@ -105,20 +92,14 @@
                 transform: translateY(-50%);
             }
 
-            /*div.overview-card {
-                flex: 0 0 auto;
-                filter: drop-shadow(-2px 2px 2px #babcbe);
-            }*/
-
             div.project-cards-desktop {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-auto-rows: 1fr;
                 justify-content: space-evenly;
                 column-gap: 8px;
-                row-gap: 0;
+                row-gap: 0px;
                 width: 88%;
-                height: auto;               
             }
 
             div.project-cards-mobile {
@@ -131,11 +112,45 @@
                 margin-right: auto;
                 width: 312px;
             }
+
+            .iframe-link iframe {
+                display: none;
+            }
+
+            .iframe-link:hover iframe {
+                display: block;
+            }
+
+            .desktop-project-card {
+                position: relative;
+            }
+
+            .desktop-project-card .layer-0 {
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            .desktop-project-card .layer-1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                opacity: 0;
+                transform: translate(-50%, -50%);
+            }
     
             div.mobile-project-card {
                 width: 50%;
                 height: 50%;
             }
+
+            @keyframes slow {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+            
         </style>
 
         <!-- text in browser tab -->
@@ -147,7 +162,7 @@
     </head>
 
     <body> 
-        <a id="home-img" href="https://www.frncscccvl.com">
+        <a id="home-img" href="http://127.0.0.1:8080/">
             <img src="images/_fc.svg" alt="home"/>
         </a>
 
@@ -161,27 +176,42 @@
 
         <!-- project cards (desktop) -->
         <div class="project-cards-desktop">
-            <!-- desktop -->
-            <a class="desktop-project-card" href="documents/ucf.pdf" download>
-                <img src="images/ucf-icon-desktop.svg" alt="ucf.pdf" title="ucf.pdf"/>
-            </a>
+            <div class="desktop-project-card">
+                <img src="images/ucf-icon-desktop.svg" class="layer-0"/>
+                <a class="iframe-link">
+                    <img src="images/decoy.png" class="layer-1"/>
+                    <iframe src="ucf-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
+                </a>
+            </div>
 
-            <a class="desktop-project-card" href="documents/blurate.pdf" download>
-                <img src="images/blurate-icon-desktop.svg" alt="blurate.pdf" title="blurate.pdf"/>
-            </a>
+            <div class="desktop-project-card">
+                <img src="images/blurate-icon-desktop.svg" class="layer-0"/>
+                <a class="iframe-link">
+                    <img src="images/decoy.png" class="layer-1"/>
+                    <iframe src="blurate-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
+                </a> 
+            </div>
             
-            <a class="desktop-project-card" href="documents/portfolio.pdf" download>
-                <img src="images/portfolio-icon-desktop.svg" alt="portfolio.pdf" title="portfolio.pdf"/>
-            </a> 
+            <div class="desktop-project-card">
+                <img src="images/portfolio-icon-desktop.svg" class="layer-0"/>
+                <a class="iframe-link">
+                    <img src="images/decoy.png" class="layer-1"/>
+                    <iframe src="portfolio-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
+                </a>
+            </div> 
 
-            <a class="desktop-project-card" href="documents/notarybyagnes.pdf" download>
-                <img src="images/notarybyagnes-icon-desktop.svg" alt="notarybyagnes.pdf, 1.3MB" title="notarybyagnes.pdf, 1.3MB"/>
-            </a>
+            <div class="desktop-project-card">
+                <img src="images/notarybyagnes-icon-desktop.svg" class="layer-0"/>
+                <a class="iframe-link">
+                    <img src="images/decoy.png" class="layer-1"/>
+                    <iframe src="notarybyagnes-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
+                </a>
+            </div>
         </div>
-
+    
         <!-- desktop element -->
         <a id="desktop-about">
-            <img src="images/about-section.svg" alt="About" title="About"/>
+            <center><img src="images/about-section.svg" alt="About" title="About"/>
         </a>
 
         <!-- project cards (mobile) -->
@@ -216,8 +246,8 @@
 
             <a class="exp" target="_blank" href="https://github.com/frncscccvl">
                 <img src="images/github-icon-desktop.svg" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon-desktop.svg';"/>
-            </a> 
-
+            </a>
+ 
             <a class="exp" target="_blank" href="grid.html" onClick="window.open('grid.html', 'poetry', 'resizable, height=720,width=1000,left=360,top=360'); return false;"> 
                 <img src="images/poetry-icon-desktop.svg" onmouseover="this.src='images/poetry-icon-hover.svg';" onmouseout="this.src='images/poetry-icon-desktop.svg';"/>
             </a>
