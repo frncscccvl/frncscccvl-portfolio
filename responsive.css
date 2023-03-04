@@ -22,6 +22,10 @@
         margin-top: 2em;
     }
 
+    #peasantries-label {
+        display: none;
+    }
+
     .desktop-project-card {
         display: none;
     }
