@@ -100,6 +100,7 @@
                 column-gap: 8px;
                 row-gap: 0px;
                 width: 88%;
+                margin-bottom: 0;
             }
 
             div.project-cards-mobile {
@@ -155,10 +156,6 @@
             @keyframes slow {
                 from { opacity: 0; }
                 to   { opacity: 1; }
-            }
-
-            #overlay {
-                display: none;
             }
         </style>
 
@@ -219,15 +216,14 @@
         </div>
     
         <!-- desktop element -->
-        <a id="desktop-about">
+        <a id="desktop-about" style="display:block; padding:0px 0px 16px; width:88%;">
             <center><img src="images/about-section.svg" alt="About" title="About"/>
         </a>
 
-        <div id="overlay">
-            <a>
-                <iframe src="grid.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;" onmouseout="document.getElementById('overlay').style.display='none';"></iframe>
-            </a>
-        </div>
+        <a class="iframe-link" id="peasantries-label" style="display:block; width:88%;">
+            <center><img src="images/peasantries-label.svg" alt="Peasantries: An Introductory"/>
+            <iframe src="grid.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
+        </a>
 
         <!-- project cards (mobile) -->
         <div class="project-cards-mobile">
@@ -263,8 +259,8 @@
                 <img src="images/github-icon-desktop.svg" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon-desktop.svg';"/>
             </a>
             
-            <a id="exp" href="#0">
-                <img src="images/poetry-icon-desktop.svg" onmouseover="this.src='images/poetry-icon-hover.svg';" onmouseout="this.src='images/poetry-icon-desktop.svg';" onclick="document.getElementById('overlay').style.display='block';"/>
+            <a id="exp" target="_blank" href="https://twitter.com/frncscccvl">
+                <img src="images/twitter-icon-desktop.svg" onmouseover="this.src='images/twitter-icon-hover.svg';" onmouseout="this.src='images/twitter-icon-desktop.svg';"/>
             </a>
         </div>
 
@@ -300,6 +296,7 @@
                 <img src="images/cv-icon-mobile.svg" alt="CV" title="CV"/>
             </a>
         </div>
+
         <!-- <p><center>&copy; 2022 FRANCIS CACCAVALE</p> -->
     </footer>
 </html>
