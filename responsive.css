@@ -26,6 +26,10 @@
         display: none !important;
     }
 
+    #vector-title {
+        display: none !important;
+    }
+
     .desktop-project-card {
         display: none;
     }
@@ -54,6 +58,10 @@
 
 @media screen and (min-width: 801px) {
     #arrow-icon {
+        display: none;
+    }
+
+    #vector-title-mobile {
         display: none;
     }
 

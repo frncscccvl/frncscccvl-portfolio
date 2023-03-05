@@ -53,6 +53,13 @@
             }
 
             #vector-title {
+                display: block;
+                position: relative;
+                top: 6.5em;
+                width: 88%;
+            }
+
+            #vector-title-mobile {
                 position: relative;
                 top: 6.5em;
             }
@@ -101,7 +108,6 @@
                 row-gap: 0px;
                 width: 88%;
                 margin-bottom: 0;
-                padding: 0;
             }
 
             div.project-cards-mobile {
@@ -120,21 +126,24 @@
             }
 
             .iframe-link:hover iframe {
-                -webkit-animation: slow 2s;
-                   -moz-animation: slow 2s; 
-                    -ms-animation: slow 2s; 
-                     -o-animation: slow 2s; 
-                        animation: slow 2s;
+                -webkit-animation: slow 1.6s;
+                   -moz-animation: slow 1.6s; 
+                    -ms-animation: slow 1.6s; 
+                     -o-animation: slow 1.6s; 
+                        animation: slow 1.6s;
 
                 display: block;
             }
 
             .desktop-project-card {
                 position: relative;
+                margin: 0;
+                padding: 0;
             }
 
             .desktop-project-card .layer-0 {
                 position: relative;
+                padding: 0;
                 top: 0;
                 left: 0;
                 z-index: 0;
@@ -168,17 +177,25 @@
         <link rel="apple-touch-icon" href="https://github.com/frncscccvl/frncscccvl-portfolio/blob/main/images/ux_favicon_180px.svg">
     </head>
 
-    <body> 
+    <body>
+        <!-- desktop element --> 
         <a id="home-img" href="https://www.frncscccvl.com">
             <img src="images/_fc.svg" alt="home"/>
         </a>
 
+        <!-- mobile element -->
         <a id="mobile-home-img" href="https://www.frncscccvl.com">
             <img src="images/_fc-mobile.svg" alt="home"/>
         </a>
 
+        <!-- desktop element -->
         <a id="vector-title">
             <center><img src="images/title.svg"/>
+        </a>
+
+        <!-- mobile element -->
+        <a id="vector-title-mobile">
+            <center><img src="images/title-mobile.svg"/>
         </a>
 
         <!-- project cards (desktop) -->
@@ -217,10 +234,11 @@
         </div>
     
         <!-- desktop element -->
-        <a id="desktop-about" style="display:block; padding:0px 0px 16px; width:88%;">
+        <a id="desktop-about" style="display:block; margin:1px 0px 1px; width:88%;">
             <center><img src="images/about-section.svg" alt="About" title="About"/>
         </a>
 
+        <!-- desktop element -->
         <a class="iframe-link" id="peasantries-label" style="display:block; width:88%;">
             <center><img src="images/peasantries-label.svg" alt="Peasantries: An Introductory"/>
             <iframe src="grid.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
