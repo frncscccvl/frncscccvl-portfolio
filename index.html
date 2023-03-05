@@ -20,6 +20,7 @@
             body {
                 background-color: white;
                 font-family: 'Spectral';
+                line-height: 1;
             }
 
             iframe {
@@ -42,21 +43,12 @@
                 top: 16px;
             }
 
-            #email {
-                color: black;
-                text-decoration: none;
-            }
-
-            #desktop-about {
-                display: block;
-                width: 91%;
-            }
-
             #vector-title {
                 display: block;
                 position: relative;
                 top: 6.5em;
                 width: 88%;
+                padding: 0px 0px 8px;
             }
 
             #vector-title-mobile {
@@ -105,7 +97,7 @@
                 grid-auto-rows: 1fr;
                 justify-content: space-evenly;
                 column-gap: 8px;
-                row-gap: 0px;
+                row-gap: 4px;
                 width: 88%;
                 margin-bottom: 0;
             }
@@ -133,6 +125,27 @@
                         animation: slow 1.6s;
 
                 display: block;
+            }
+
+            .desktop-peasantries-card {
+                position: relative;
+            }
+
+            .desktop-peasantries-card .layer-0 {
+                position: relative;
+                padding: 0;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            .desktop-peasantries-card .layer-1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                opacity: 0;
+                transform: translate(-50%, -50%);
             }
 
             .desktop-project-card {
@@ -234,15 +247,18 @@
         </div>
     
         <!-- desktop element -->
-        <a id="desktop-about" style="display:block; margin:1px 0px 1px; width:88%;">
+        <a id="desktop-about" style="display:block; margin:4px 0px 4px; width:88%;">
             <center><img src="images/about-section.svg" alt="About" title="About"/>
         </a>
 
         <!-- desktop element -->
-        <a class="iframe-link" id="peasantries-label" style="display:block; width:88%;">
-            <center><img src="images/peasantries-label.svg" alt="Peasantries: An Introductory"/>
-            <iframe src="grid.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
-        </a>
+        <div class="desktop-peasantries-card" style="display:block; width:88%;">
+            <center><img src="images/peasantries-label.svg" alt="Peasantries: An Introductory" class="layer-0"/>
+            <a class="iframe-link" id="peasantries-label" style="display:block; width:88%;">
+                <center><img src="images/decoy-b.png" class="layer-1"/>
+                <iframe src="grid.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
+            </a>
+        </div>
 
         <!-- project cards (mobile) -->
         <div class="project-cards-mobile">
@@ -304,7 +320,7 @@
     <br>
     <!-- mobile element (footer) -->
     <footer>
-        <p><center><a id="email" href="mailto:hello@frncscccvl.com">hello@frncscccvl.com</a></p>
+        <p><center><a href="mailto:hello@frncscccvl.com" style="color:black; text-decoration:none;">hello@frncscccvl.com</a></p>
         
         <div class="footer-icons">
             <a id="poetry-icon" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing">
