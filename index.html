@@ -31,32 +31,6 @@
                 max-width: 100%;
             }
 
-            #home-img {
-                position: fixed;
-                right: 1.5%;
-                top: 2%;
-            }
-
-            #mobile-home-img {
-                position: fixed;
-                right: 16px;
-                top: 16px;
-            }
-
-            #vector-title {
-                display: block;
-                position: relative;
-                /*top: 6.5em;*/
-                top: 4em;
-                width: 88%;
-                padding: 0px 0px 8px;
-            }
-
-            #vector-title-mobile {
-                position: relative;
-                top: 6.5em;
-            }
-
             .footer-icons {
                 align-items: center;
                 display: flex;
@@ -195,27 +169,27 @@
 
     <body>
         <!-- desktop element --> 
-        <a id="home-img" href="https://www.frncscccvl.com">
+        <a id="desktop" style="position:fixed; right:1.5%; top:2%;">
             <img src="images/_fc.svg" alt="home"/>
         </a>
 
         <!-- mobile element -->
-        <a id="mobile-home-img" href="https://www.frncscccvl.com">
+        <a id="mobile" href="https://www.frncscccvl.com" style="position:fixed; right:16px: top:16px;">
             <img src="images/_fc-mobile.svg" alt="home"/>
         </a>
 
         <!-- desktop element -->
-        <a id="vector-title">
+        <a id="desktop" style="display:block; position:relative; top:4em; width:88%; padding:0px 0px 8px;">
             <center><img src="images/title.svg"/>
         </a>
 
         <!-- mobile element -->
-        <a id="vector-title-mobile">
+        <a id="mobile" style="position:relative; top:6.5em;">
             <center><img src="images/title-mobile.svg"/>
         </a>
 
         <!-- project cards (desktop) -->
-        <div class="project-cards-desktop">
+        <div id="desktop" class="project-cards-desktop">
             <div class="desktop-project-card">
                 <img src="images/ucf-icon-desktop.svg" class="layer-0"/>
                 <a class="iframe-link">
@@ -250,12 +224,12 @@
         </div>
     
         <!-- desktop element -->
-        <a id="desktop-about" style="display:block; margin:4px 0px 4px; width:88%;">
+        <a id="desktop" style="display:block; margin:4px 0px 4px; width:88%;">
             <center><img src="images/about-section.svg" alt="About" title="About"/>
         </a>
 
         <!-- desktop element -->
-        <div class="desktop-peasantries-card" style="display:block; width:88%; padding:0px 0px 4px;">
+        <div id="desktop" class="desktop-peasantries-card" style="display:block; width:88%; padding:0px 0px 4px;">
             <center><img src="images/peasantries-label.svg" alt="Peasantries: An Introductory" class="layer-0"/>
             <a class="iframe-link" id="peasantries-label" style="display:block; width:88%;">
                 <center><img src="images/decoy-b.png" class="layer-1"/>
@@ -276,7 +250,7 @@
         </div>
 
         <!-- project cards (mobile) -->
-        <div class="project-cards-mobile">
+        <div id="mobile" class="project-cards-mobile">
             <!-- mobile -->
             <a class="mobile-project-card" href="documents/ucf-mobile.pdf" download>
                 <img src="images/ucf-icon.svg" alt="ucf.pdf, 1MB" title="ucf.pdf, 1MB"/>
@@ -296,36 +270,36 @@
         </div>
 
         <!-- navigation element -->
-        <div class="experimental-nav">
-            <a id="exp" target="_blank" href="mailto:hello@frncscccvl.com"> 
+        <div id="desktop" class="experimental-nav">
+            <a target="_blank" href="mailto:hello@frncscccvl.com"> 
                 <img src="images/contact-icon-desktop.svg" onmouseover="this.src='images/contact-icon-hover.svg';" onmouseout="this.src='images/contact-icon-desktop.svg';"/>
             </a>
     
-            <a id="exp" href="documents/cv.pdf" download>
+            <a href="documents/cv.pdf" download>
                 <img src="images/cv-icon-desktop.svg" onmouseover="this.src='images/cv-icon-hover.svg';" onmouseout="this.src='images/cv-icon-desktop.svg';"/>
             </a> 
 
-            <a id="exp" target="_blank" href="https://github.com/frncscccvl">
+            <a target="_blank" href="https://github.com/frncscccvl">
                 <img src="images/github-icon-desktop.svg" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon-desktop.svg';"/>
             </a>
             
-            <a id="exp" target="_blank" href="https://twitter.com/frncscccvl">
+            <a target="_blank" href="https://twitter.com/frncscccvl">
                 <img src="images/twitter-icon-desktop.svg" onmouseover="this.src='images/twitter-icon-hover.svg';" onmouseout="this.src='images/twitter-icon-desktop.svg';"/>
             </a>
         </div>
 
         <!-- mobile element -->
-        <a id="arrow-icon" style="margin-bottom: 1.5em;">
+        <a id="mobile" style="display:block; margin-top:3em; margin-bottom:1.5em;">
             <center><img src="images/arrow-icon.svg"/>
         </a>
 
         <!-- mobile element -->
-        <a id="mobile-intro">
+        <a id="mobile" style="display:block; margin-bottom:2em; margin-top:2em;">
             <br><center><img src="images/mobile-intro-graphic.svg"/><br><br>
         </a>
 
         <!-- mobile element -->
-        <div class="info-cards-container-mobile" data-flickity='{ "contain": true }'>
+        <div id="mobile" class="info-cards-container-mobile" data-flickity='{ "contain": true }'>
             <div class="info-card-cell-mobile"> <img src="images/info-card-a.svg"/> </div>
             <div class="info-card-cell-mobile"> <img src="images/info-card-b.svg"/> </div>
             <div class="info-card-cell-mobile"> <img src="images/info-card-c.svg"/> </div>
@@ -334,7 +308,7 @@
 
     <br>
     <!-- mobile element (footer) -->
-    <footer>
+    <footer id="mobile">
         <p><center><a href="mailto:hello@frncscccvl.com" style="color:black; text-decoration:none;">hello@frncscccvl.com</a></p>
         
         <div class="footer-icons">

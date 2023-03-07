@@ -1,101 +1,16 @@
 @media screen and (max-width: 800px) {
-    #arrow-icon {
-        display: block;
-        margin-top: 3em;
-    }
-
-    #desktop-about {
-        display: none !important;
-    }
-
-    #home-img {
-        display: none;
-    }
- 
-    #intro-img {
-        display: none;
+    #desktop {
+        display: none !important;  
     }
                 
-    #mobile-intro {
-        display: block;
-        margin-bottom: 2em;
-        margin-top: 2em;
-    }
-
-    #peasantries-label {
-        display: none !important;
-    }
-
-    #vector-title {
-        display: none !important;
-    }
-
-    .desktop-project-card {
-        display: none;
-    }
-
-    .desktop-peasantries-card {
-        display: none !important;
-    }
-
-    div.experimental-nav {
-        display: none !important;      
-    }
-
-    .exp {
-        display: none;
-    }
-
     .iframe-link {
         display: none !important;
-    }
-
-    .project-cards-mobile {
-        margin-bottom: 1em;
-        margin-top: 2.8em;
-    }
-
-    footer {
-        
-    }                                
+    }                               
 }
 
 @media screen and (min-width: 801px) {
-    #arrow-icon {
-        display: none;
-    }
-
-    #vector-title-mobile {
-        display: none;
-    }
-
-    #mobile-home-img {
-        display: none;
-    }
-
-    #mobile-intro {
-        display: none;
-    }
-
-    .info-cards-container-mobile {
-        display: none;
-    }
-
-    .mobile-project-card {
-        display: none;
-    }
-
-    div.project-cards-mobile {
+    #mobile {
         display: none !important;
-    }
-
-    div.project-cards-desktop {
-        margin-bottom: 16px;
-        margin-top: 6.5em;
-    }
-
-    footer {
-       display: none !important;
     }
 }
 
@@ -107,7 +22,7 @@
 
 @media (orientation: portrait) {
     div.experimental-nav {
-        display: none !imporant;
+        display: none !important;
     }
 }
 
