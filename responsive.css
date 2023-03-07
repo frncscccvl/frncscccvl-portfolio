@@ -15,9 +15,7 @@
 }
 
 @media (orientation: landscape) {
-    #rotate-alert {
-        display: none !important;
-    }
+    
 }
 
 @media (orientation: portrait) {
