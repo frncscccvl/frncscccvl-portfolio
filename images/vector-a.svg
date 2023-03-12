@@ -1,0 +1,16 @@
+<svg width="206" height="106" viewBox="0 0 206 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="71" cy="83.9966" rx="10" ry="10.001" fill="#CABCBE"/>
+<line x1="71.2206" y1="83" x2="71.2206" y2="19" stroke="#CABCBE" stroke-width="2.4"/>
+<ellipse cx="71" cy="10.001" rx="10" ry="10.001" fill="#CABCBE"/>
+<ellipse cx="184.576" cy="24.858" rx="13" ry="13.0013" fill="#FAFAFA"/>
+<line x1="180.684" y1="24.6757" x2="11.5394" y2="86.2393" stroke="#FAFAFA" stroke-width="2.4"/>
+<ellipse cx="18.0001" cy="84.0012" rx="10" ry="10.001" fill="#FAFAFA"/>
+<g clip-path="url(#clip0_1190_210)">
+<path d="M185 15C179.48 15 175 19.48 175 25C175 30.52 179.48 35 185 35C190.52 35 195 30.52 195 25C195 19.48 190.52 15 185 15ZM184 32.93C180.05 32.44 177 29.08 177 25C177 24.38 177.08 23.79 177.21 23.21L182 28V29C182 30.1 182.9 31 184 31V32.93ZM190.9 30.39C190.64 29.58 189.9 29 189 29H188V26C188 25.45 187.55 25 187 25H181V23H183C183.55 23 184 22.55 184 22V20H186C187.1 20 188 19.1 188 18V17.59C190.93 18.78 193 21.65 193 25C193 27.08 192.2 28.97 190.9 30.39Z" fill="#424242"/>
+</g>
+<defs>
+<clipPath id="clip0_1190_210">
+<rect width="24" height="24" fill="white" transform="translate(173 13)"/>
+</clipPath>
+</defs>
+</svg>

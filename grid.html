@@ -6,6 +6,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- link responsive layout -->
+        <link rel="stylesheet" href="responsive.css" media="screen">
+
         <style>
             body {
                 background-color: #FAFAFA;
@@ -25,6 +28,20 @@
                 width: 100%;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            @media screen and (max-width: 800px) {
+                div.two-page-view {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                justify-content: space-evenly;
+                column-gap: 2px;
+                row-gap: 2px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }                
             }
         </style>
     </head>

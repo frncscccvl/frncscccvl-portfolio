@@ -12,13 +12,10 @@
         <link rel="stylesheet" href="responsive.css" media="screen">
         <!-- link 'Spectral' font courtesy of Google -->
         <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-        <!-- link image carousel utility courtesy of Flickity -->        
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
         <style>
             body {
-                background-color: white;
+                /*background-color: white;*/
                 font-family: 'Spectral';
                 line-height: 1;
             }
@@ -36,27 +33,6 @@
                 display: flex;
                 gap: 32px;
                 justify-content: center;
-            }
-
-            .flickity-prev-next-button:disabled {
-                display: none;
-            }
-
-            .info-cards-container-mobile {
-                margin-bottom: 16px;
-                margin-top: 16px;
-                max-width: 400px;
-            }
-
-            .info-card-cell-mobile {
-                width: 100%;
-                height: 238px;
-                margin-right: 8px;
-            }
-
-            .desktop-mtg-flex > img {
-                //height: 506px;
-                width: auto;
             }
 
             div.experimental-nav {
@@ -82,18 +58,6 @@
                 margin-bottom: 0;
                 margin-top: 0;
                 padding: 4em 0px 0px;
-            }
-
-            div.project-cards-mobile {
-                display: grid;
-                grid-template-columns: 156px 156px;
-                grid-template-rows: 156px 156px;
-                gap: 8px;
-                justify-content: space-evenly;
-                margin-left: auto;
-                margin-right: auto;
-                width: 312px;
-                margin-top: 6.5em;
             }
 
             .iframe-link iframe {
@@ -153,11 +117,6 @@
                 opacity: 0;
                 transform: translate(-50%, -50%);
             }
-   
-            div.mobile-project-card {
-                width: 50%;
-                height: 50%;
-            }
 
             @keyframes slow {
                 from { opacity: 0; }
@@ -179,19 +138,9 @@
             <img src="images/_fc.svg" alt="home"/>
         </a>
 
-        <!-- mobile element -->
-        <a id="mobile" href="https://www.frncscccvl.com" style="position:fixed; right:16px; top:16px;">
-            <img src="images/_fc-mobile.svg" alt="home"/>
-        </a>
-
         <!-- desktop element -->
         <a id="desktop" style="display:block; position:relative; top: 4em; width:88%; padding:0px 0px 8px;">
             <center><img src="images/title.svg"/>
-        </a>
-
-        <!-- mobile element -->
-        <a id="mobile" style="display:block; position:relative; top:6.5em;">
-            <center><img src="images/title-mobile.svg"/>
         </a>
 
         <!-- project cards (desktop) -->
@@ -244,8 +193,8 @@
         </div>
 
         <div id="desktop" class="desktop-mtg-flex" style="display:flex; align-items:center; justify-content:center; gap:8px; width:88%;">
-            <img src="images/tap-icon.svg" style="width: calc(14.435% - 8px);"/>
-            <img src="images/title-mtg.svg" style="width: calc(85.565% - 8px);"/> 
+            <img src="images/tap-icon.svg" style="width: calc(14.438% - 8px);"/>
+            <img src="images/title-mtg.svg" style="width: calc(85.562% - 8px);"/> 
         </div>
 
         <div id="desktop" class="desktop-mtg-cards-flex" style="display:flex; gap:8px; justify-content:center; align-items:center; width:88%; padding: 8px 0px 4em;">
@@ -254,26 +203,6 @@
             <img src="images/enchantress++.svg" style="width: calc(20% - 8px);"/>
             <img src="images/enchantress--.svg" style="width: calc(20% - 8px);"/>
             <img src="images/weirdo.svg" style="width: calc(20% - 8px);"/>
-        </div>
-
-        <!-- project cards (mobile) -->
-        <div id="mobile" class="project-cards-mobile">
-            <!-- mobile -->
-            <a class="mobile-project-card" href="documents/ucf-mobile.pdf" download>
-                <img src="images/ucf-icon.svg" alt="ucf.pdf, 1MB" title="ucf.pdf, 1MB"/>
-            </a>
-
-            <a class="mobile-project-card" href="documents/blurate-mobile.pdf" download>
-                <img src="images/blurate-icon.svg" alt="blurate.pdf, 1.3MB" title="blurate.pdf, 1.3MB"/>
-            </a>
-
-            <a class="mobile-project-card" href="documents/portfolio-mobile.pdf" download>
-                <img src="images/portfolio-icon.svg" alt="portfolio.pdf, 1.2MB" title="portfolio.pdf, 1.2MB"/>
-            </a>
-
-            <a class="mobile-project-card" href="documents/notarybyagnes-mobile.pdf" download>
-                <img src="images/notarybyagnes-icon.svg" alt="notarybyagnes.pdf, 1.3MB" title="notarybyagnes.pdf, 1.3MB"/>
-            </a>
         </div>
 
         <!-- navigation element -->
@@ -295,39 +224,68 @@
             </a>
         </div>
 
-        <!-- mobile element -->
-        <a id="mobile" style="display:block; margin-top:3em; margin-bottom:1.5em;">
-            <center><img src="images/arrow-icon.svg"/>
-        </a>
+        <a id="experimental-mobile-device">
+            <div style="display:flex; width:100%; height:100%; flex-direction:column; position:absolute; justify-content:center; align-items:center; transform: translate(-50%, -50%); top:50%; left:50%;">
+                <img src="images/self.svg" style="position:relative; width:92%;"/>
 
-        <!-- mobile element -->
-        <a id="mobile" style="display:block; margin-bottom:2em; margin-top:2em;">
-            <br><center><img src="images/mobile-intro-graphic.svg"/><br><br>
-        </a>
+                <a href="mobile-work.html">
+                    <img src="images/decoy-c.png" style="position:absolute; z-index:1; top:40%; left:0; opacity:0;"/>
+                </a>
 
-        <!-- mobile element -->
-        <div id="mobile" class="info-cards-container-mobile" data-flickity='{ "contain": true }'>
-            <div class="info-card-cell-mobile"> <img src="images/info-card-a.svg"/> </div>
-            <div class="info-card-cell-mobile"> <img src="images/info-card-b.svg"/> </div>
-            <div class="info-card-cell-mobile"> <img src="images/info-card-c.svg"/> </div>
-        </div>
+                <a href="grid.html">
+                    <img src="images/decoy-c.png" style="position:absolute; z-index:1; top:58%; left:0; opacity:0;"/>
+                </a>
+
+                <a href="mtg-portfolio.html">
+                    <img src="images/decoy-c.png" style="position:absolute; z-index:1; top:72%; left:0; opacity:0;"/>
+                </a>
+            </div>
+
+            <div id="experimental-mobile-device" style="display:flex; position:fixed; bottom:8%; justify-content:center; align-items:center; width:100%; gap:1.2em;">
+                <a target="_blank" href="https://twitter.com/frncscccvl"> 
+                    <img src="images/twitter-icon-exp.svg"/>
+                </a>
+
+                <a target="_blank" href="https://github.com/frncscccvl"> 
+                    <img src="images/github-icon-exp.svg"/>
+                </a>
+
+                <a target="_blank" href="mailto:hello@frncscccvl.com"> 
+                    <img src="images/email-icon-exp.svg"/>
+                </a>
+
+                <a>
+                    <img src="images/email-icon-exp.svg"/>
+                </a>
+            </div>
+
+        </a>
     </body>
 
     <br>
     <!-- mobile element (footer) -->
     <footer id="mobile">
-        <p><center><a href="mailto:hello@frncscccvl.com" style="color:black; text-decoration:none;">hello@frncscccvl.com</a></p>
-        
-        <div class="footer-icons">
-            <a id="poetry-icon" target="_blank" href="https://docs.google.com/document/d/17zXXwahiQz1A3YWQRrW242s2nDYzTN0Wn3eweuPTmwo/edit?usp=sharing">
-                <img src="images/poetry-icon-mobile.svg" alt="Peasantries: An Introductory" title="Peasantries: An Introductory">
-            </a>
+        <!-- <div id="footer-exp" style="display:flex; margin-top:95%; justify-content:center; width:100%; gap:5.5px;">
+                <a>
+                    <img src="images/decoy-icon-exp.svg"/>
+                </a>
 
-            <a id="cv-icon" target="_blank" href="documents/cv.pdf" download>
-                <img src="images/cv-icon-mobile.svg" alt="CV" title="CV"/>
-            </a>
-        </div>
+                <a>
+                    <img src="images/decoy-icon-exp.svg"/>
+                </a>
 
+                <a>
+                    <img src="images/decoy-icon-exp.svg"/>
+                </a>
+
+                <a>
+                    <img src="images/decoy-icon-exp.svg"/>
+                </a>
+
+                <a>
+                    <img src="images/decoy-icon-exp.svg"/>
+                </a>
+            </div> -->
         <!-- <p><center>&copy; 2022 FRANCIS CACCAVALE</p> -->
     </footer>
 </html>

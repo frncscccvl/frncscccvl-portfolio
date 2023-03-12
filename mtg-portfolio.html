@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- link responsive layout -->
+        <link rel="stylesheet" href="responsive.css" media="screen">    
+        
+        <style>
+            body {
+                background-color: #ffffff;
+            }
+
+            img {
+                max-width: 100%;
+            }
+            
+             div.project-cards-mobile {
+                display: grid;
+                grid-template-columns: 156px 156px;
+                grid-template-rows: 156px 156px;
+                gap: 8px;
+                justify-content: space-evenly;
+                margin-left: auto;
+                margin-right: auto;
+                width: 312px;
+                margin-top: 6.5em;
+            }
+
+            div.mtg-project-card {
+                width: 50%;
+                height: 50%;
+            }
+
+            .footer-icons {
+                align-items: center;
+                display: flex;
+                gap: 32px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- mobile element -->
+        <a id="mobile" style="display:block; position:relative; top:6.5em;">
+            <center><img src="images/mtg-wiz.svg"/>
+        </a>
+
+        <!-- project cards (mobile) -->
+        <div id="mobile" class="project-cards-mobile">
+            <a class="mtg-project-card">
+                <img src="images/automata-card.svg"/>
+            </a>
+
+            <a class="mtg-project-card">
+                <img src="images/enchantress++-card.svg"/>
+            </a>
+
+            <a class="mtg-project-card">
+                <img src="images/enchantress---card.svg"/>
+            </a>
+
+            <a class="mtg-project-card">
+                <img src="images/weirdo-card.svg"/>
+            </a>
+        </div>
+    </body>
+
+    <!-- mobile element (footer) -->
+    <footer id="mobile">
+        <br><p><center><a href="mailto:hello@frncscccvl.com" style="color:black; text-decoration:none;">hello@frncscccvl.com</a></p>
+
+        <!-- <p><center>&copy; 2022 FRANCIS CACCAVALE</p> -->
+    </footer>
+</html>

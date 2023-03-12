@@ -1,15 +1,27 @@
 @media screen and (max-width: 800px) {
+    body {
+        background-color: rgba(0, 0, 0, 0.4);
+    }    
+    
     #desktop {
         display: none !important;  
     }
-                
-    .iframe-link {
-        display: none !important;
+
+    div.two-page-view {
+        grid-template-column: 1fr;
     }                               
 }
 
 @media screen and (min-width: 801px) {
+    body {
+        background-color: #ffffff;
+    }
+
     #mobile {
+        display: none !important;
+    }
+    
+    #experimental-mobile-device {
         display: none !important;
     }
 }
