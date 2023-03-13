@@ -7,8 +7,6 @@
         
         <!-- link responsive layout -->
         <link rel="stylesheet" href="responsive.css" media="screen">
-        <!-- link 'Spectral' font courtesy of Google -->
-        <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>    
         
         <style>
             html {
@@ -16,29 +14,11 @@
             }
     
             body {
-                background-color: #fafafa;
-                font-family: 'Spectral';
+                background-color: rgba(0, 0, 0, 0.4);
             }
 
             img {
                 max-width: 100%;
-            }
-            
-             div.project-cards-mobile {
-                display: grid;
-                grid-template-columns: 156px 156px;
-                grid-template-rows: 156px 156px;
-                gap: 8px;
-                justify-content: space-evenly;
-                margin-left: auto;
-                margin-right: auto;
-                width: 312px;
-                margin-top: 2em;
-            }
-
-            div.mtg-project-card {
-                width: 50%;
-                height: 50%;
             }
 
             .footer-icons {
@@ -52,29 +32,33 @@
 
     <body>
         <a id="mobile" href="https://frncscccvl.com">
-            <br><center><img src="images/portfolio-thumbnail.svg"/>
+            <br><center><img src="images/mtg-thumbnail.svg"/>
         </a>        
         <!-- mobile element -->
-        <a id="mobile" style="display:block; position:relative; top:2em;">
-            <center><img src="images/mtg-wiz.svg"/>
+        <a id="mobile" style="display:block; position:relative; margin-top:16px;">
+            <center><img src="images/mtg-vectors.svg"/>
         </a>
 
         <!-- project cards (mobile) -->
-        <div id="mobile" class="project-cards-mobile">
-            <a class="mtg-project-card">
-                <img src="images/automata-card.svg"/>
+        <div id="mobile" style="display:flex; flex-direction:column; position:relative; width:100%; gap:8px; justify-content:center; align-items:center; margin-top:32px;">
+            <a>
+                <img src="images/automata-card.svg" style="width:96%"/>
             </a>
 
-            <a class="mtg-project-card">
-                <img src="images/enchantress++-card.svg"/>
+            <a>
+                <img src="images/c-4-card.svg" style="width:96%"/>
             </a>
 
-            <a class="mtg-project-card">
-                <img src="images/enchantress---card.svg"/>
+            <a>
+                <img src="images/enchantress++-card.svg" style="width:96%"/>
             </a>
 
-            <a class="mtg-project-card">
-                <img src="images/weirdo-card.svg"/>
+            <a>
+                <img src="images/enchantress---card.svg" style="width:96%"/>
+            </a>
+
+            <a>
+                <img src="images/weirdo-card.svg" style="width:96%"/>
             </a>
         </div>
     </body>
