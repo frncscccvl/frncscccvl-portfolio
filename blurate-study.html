@@ -14,7 +14,7 @@
             }
 
             img {
-                max-width: 96%;
+                max-width: 100%;
             }
 
             h1, h2, h5 {
@@ -43,7 +43,7 @@
             .project-thumbnails {
                 align-items: center;
                 display: flex;
-                gap: 32px;
+                gap: 4px;
                 justify-content: center;
                 padding: 48px 0px 24px;
             }
@@ -58,6 +58,20 @@
                 text-align: start;
                 width: 56%;
                 opacity: 0.4;
+            }
+
+            @media screen and (max-width: 800px) {
+                #subtext {
+                    width: 96%;
+                }
+
+                h1, h2, h5 {
+                    width: 96%;
+                }
+
+                li, ol, hr, span, ol {
+                    width: 88%;
+                }
             }
         </style>
     </head>
@@ -90,15 +104,15 @@
     <footer>
         <div class="project-thumbnails">
             <a>
-                <img src="images/blurate-thumbnail.svg"/>
+                <img src="images/blurate-thumbnail.svg" style="width:64%; height:64%;"/>
             </a>
             
             <a>
-                <img src="images/notarybyagnes-thumbnail.svg"/>
+                <img src="images/notarybyagnes-thumbnail.svg" style="width:64%; height:64%;"/>
             </a>    
     
             <a>
-                <img src="images/ucf-thumbnail.svg"/>
+                <img src="images/ucf-thumbnail.svg" style="width:64%; height:64%;"/>
             </a>
         </div>
     </footer>
