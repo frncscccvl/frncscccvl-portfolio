@@ -40,15 +40,26 @@
 
             @media screen and (max-width: 800px) {
                 div.two-page-view {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                justify-content: space-evenly;
-                column-gap: 2px;
-                row-gap: 2px;
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    justify-content: space-evenly;
+                    column-gap: 2px;
+                    row-gap: 2px;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                #desktop-poetry-card {
+                    display: none !important;
+                }
+            }
+
+            @media screen and (min-width: 801px) {
+                #mobile-poetry-card {
+                    display: none !important;
+                }
             }                
         </style>
     </head>
@@ -63,56 +74,88 @@
                 <img src="images/cover.svg"/>
             </a>
 
-            <a>
+            <a id="desktop-poetry-card">
                 <img src="images/front.svg"/>
             </a>
 
-            <a>
+            <a id="mobile-poetry-card">
+                <img src="images/front-mobile.svg"/>
+            </a>
+
+            <a id="desktop-poetry-card">
                 <img src="images/copyright.svg"/>
             </a>
 
-            <a>
+            <a id="mobile-poetry-card">
+                <img src="images/copyright-mobile.svg"/>
+            </a>
+
+            <a id="desktop-poetry-card">
                 <img src="images/preface.svg"/>
+            </a>
+
+            <a id="mobile-poetry-card">
+                <img src="images/preface-mobile.svg"/>
             </a>
 
             <a>
                 <img src="images/i.svg"/>
             </a>
 
-            <a>
+            <a id="desktop-poetry-card">
                 <img src="images/ia.svg"/>
+            </a>
+
+            <a id="mobile-poetry-card">
+                <img src="images/ia-mobile.svg"/>
             </a>
 
             <a>
                 <img src="images/ii.svg"/>
             </a>
 
-            <a>
+            <a id="desktop-poetry-card">
                 <img src="images/iia.svg"/>
+            </a>
+    
+            <a id="mobile-poetry-card">
+                <img src="images/iia-mobile.svg"/>
             </a>
 
             <a>
                 <img src="images/iii.svg"/>
             </a>
 
-            <a>
+            <a id="desktop-poetry-card">
                 <img src="images/iiia.svg"/>
+            </a>
+
+            <a id="mobile-poetry-card">
+                <img src="images/iiia-mobile.svg"/>
             </a>
 
             <a>
                 <img src="images/iv.svg"/>
             </a>
 
-            <a>
+            <a id="desktop-poetry-card">
                 <img src="images/iva.svg"/>
+            </a>
+
+            <a id="mobile-poetry-card">
+                <img src="images/iva-mobile.svg"/>
             </a>
 
             <a>
                 <img src="images/v.svg"/>
             </a>
         
-            <a>
+            <a id="desktop-poetry-card">
                 <img src="images/va.svg"/>
+            </a>
+
+            <a id="mobile-poetry-card">
+                <img src="images/va-mobile.svg"/>
             </a>
 
             <a>
