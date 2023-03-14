@@ -41,20 +41,16 @@
                 height: 50%;
             }
 
-            .flickity-prev-next-button:disabled {
-                display: none;
-            }
-
             .info-cards-container-mobile {
-                margin-bottom: 16px;
-                margin-top: 16px;
-                max-width: 400px;
+                /*margin-bottom: 16px;
+                margin-top: 16px;*/
+                max-width: 360px;
             }
 
             .info-card-cell-mobile {
-                width: 100%;
-                height: 238px;
-                margin-right: 8px;
+                width: 312px;
+                height: auto;
+                margin-right:8px;
             }
 
             .footer-icons {
@@ -96,26 +92,26 @@
         </div>
 
         <!-- mobile element -->
-        <a id="mobile" style="display:block; margin-top:3em; margin-bottom:1.5em;">
+        <a id="mobile" style="display:block; margin-top:2em; margin-bottom:2em;">
             <center><img src="images/arrow-icon.svg"/>
         </a>
 
         <!-- mobile element -->
-        <a id="mobile" style="display:block; margin-bottom:2em; margin-top:2em;">
-            <br><center><img src="images/mobile-intro-graphic.svg"/><br><br>
+        <a id="mobile" style="display:block; margin-bottom:8px; margin-top:2em; width:360px;">
+            <center><img src="images/mobile-vector-a.svg"/>
         </a>
 
         <!-- mobile element -->
-        <div id="mobile" class="info-cards-container-mobile" data-flickity='{ "contain": true }'>
+        <div id="mobile" class="info-cards-container-mobile" data-flickity='{ "contain": true, "prevNextButtons": false }'>
             <div class="info-card-cell-mobile"> <img src="images/info-card-a.svg"/> </div>
             <div class="info-card-cell-mobile"> <img src="images/info-card-b.svg"/> </div>
             <div class="info-card-cell-mobile"> <img src="images/info-card-c.svg"/> </div>
         </div>
+        <br><br>
     </body>
 
     <!-- mobile element (footer) -->
     <footer id="mobile">
-        <br>
         <!-- <p><center>&copy; 2022 FRANCIS CACCAVALE</p> -->
     </footer>
 </html>
