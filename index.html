@@ -23,7 +23,7 @@
                 max-width: 100%;
             }
 
-            div.experimental-nav {
+            /*div.experimental-nav {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -34,7 +34,7 @@
                 gap: 0;
                 transform: translateY(-50%);
                 z-index: 1;
-            }
+            }*/
 
             div.project-cards-desktop {
                 display: grid;
@@ -182,8 +182,8 @@
         </div>
 
         <div id="desktop" class="desktop-mtg-flex" style="display:flex; align-items:center; justify-content:center; gap:8px; width:88%;">
-            <img src="images/tap-icon.svg" style="width: calc(14.438% - 8px);"/>
-            <img src="images/title-mtg.svg" style="width: calc(85.562% - 8px);"/> 
+            <img src="images/tap-icon.svg" style="width: calc(14.4383% - 8px);"/>
+            <img src="images/title-mtg.svg" style="width: calc(85.5627% - 8px);"/> 
         </div>
 
         <div id="desktop" class="desktop-mtg-cards-flex" style="display:flex; gap:8px; justify-content:center; align-items:center; width:88%; padding: 8px 0px 4em;">
@@ -195,7 +195,7 @@
         </div>
 
         <!-- navigation element -->
-        <div id="desktop" class="experimental-nav">
+        <!-- <div id="desktop" class="experimental-nav">
             <a target="_blank" href="mailto:hello@frncscccvl.com"> 
                 <img src="images/contact-icon-desktop.svg" onmouseover="this.src='images/contact-icon-hover.svg';" onmouseout="this.src='images/contact-icon-desktop.svg';"/>
             </a>
@@ -211,7 +211,12 @@
             <a target="_blank" href="https://twitter.com/frncscccvl">
                 <img src="images/twitter-icon-desktop.svg" onmouseover="this.src='images/twitter-icon-hover.svg';" onmouseout="this.src='images/twitter-icon-desktop.svg';"/>
             </a>
-        </div>
+        </div> -->
+        
+        <!-- read.cv redirect -->
+        <a id="desktop" href="https://read.cv/frncscccvl" target="_blank" style="display:relative; position:fixed; right:0.75%; bottom:0.75%; z-index:1;">
+            <img src="images/cv-redirect.svg"/>            
+        </a>
 
         <a id="experimental-mobile-device">
             <div style="display:flex; width:100%; height:100%; flex-direction:column; position:absolute; justify-content:center; align-items:center; transform: translate(-50%, -50%); top:50%; left:50%;">
@@ -243,7 +248,7 @@
                     <img src="images/email-icon-exp.svg"/>
                 </a>
 
-                <a href="documents/cv.pdf" download>
+                <a href="https://read.cv/frncscccvl">
                     <img src="images/cv-icon-exp.svg"/>
                 </a>
             </div>
