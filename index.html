@@ -23,19 +23,6 @@
                 max-width: 100%;
             }
 
-            /*div.experimental-nav {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: fixed;
-                right: 1.5%;
-                top: 50%;
-                gap: 0;
-                transform: translateY(-50%);
-                z-index: 1;
-            }*/
-
             div.project-cards-desktop {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -168,9 +155,15 @@
         </div>
     
         <!-- desktop element -->
-        <a id="desktop" style="display:block; margin:4px 0px 4px; width:88%;">
-            <center><img src="images/about-section.svg" alt="About" title="About"/>
-        </a>
+        <div id="desktop" class="about-section" style="display:flex; gap:8px; margin:4px 0px 4px; width:88%;">
+            <a>
+                <img src="images/about-section.svg" alt="About" title="About"/>
+            </a>
+
+            <a target="_blank" href="https://read.cv/frncscccvl">
+                <img src="images/cv-redirect.svg" alt="https://read.cv/frncscccvl" title="https://read.cv/frncscccvl"/>
+            </a>
+        </div>
 
         <!-- desktop element -->
         <div id="desktop" class="desktop-peasantries-card" style="display:block; width:88%; padding:0px 0px 4px;">
@@ -182,8 +175,8 @@
         </div>
 
         <div id="desktop" class="desktop-mtg-flex" style="display:flex; align-items:center; justify-content:center; gap:8px; width:88%;">
-            <img src="images/tap-icon.svg" style="width: calc(14.4383% - 8px);"/>
-            <img src="images/title-mtg.svg" style="width: calc(85.5627% - 8px);"/> 
+            <img src="images/tap-icon.svg" style="width: calc(14.4382% - 8px);"/>
+            <img src="images/title-mtg.svg" style="width: calc(85.5628% - 8px);"/> 
         </div>
 
         <div id="desktop" class="desktop-mtg-cards-flex" style="display:flex; gap:8px; justify-content:center; align-items:center; width:88%; padding: 8px 0px 4em;">
@@ -193,30 +186,6 @@
             <img src="images/enchantress--.svg" style="width: calc(20% - 8px);"/>
             <img src="images/weirdo.svg" style="width: calc(20% - 8px);"/>
         </div>
-
-        <!-- navigation element -->
-        <!-- <div id="desktop" class="experimental-nav">
-            <a target="_blank" href="mailto:hello@frncscccvl.com"> 
-                <img src="images/contact-icon-desktop.svg" onmouseover="this.src='images/contact-icon-hover.svg';" onmouseout="this.src='images/contact-icon-desktop.svg';"/>
-            </a>
-    
-            <a href="documents/cv.pdf" download>
-                <img src="images/cv-icon-desktop.svg" onmouseover="this.src='images/cv-icon-hover.svg';" onmouseout="this.src='images/cv-icon-desktop.svg';"/>
-            </a> 
-
-            <a target="_blank" href="https://github.com/frncscccvl">
-                <img src="images/github-icon-desktop.svg" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon-desktop.svg';"/>
-            </a>
-            
-            <a target="_blank" href="https://twitter.com/frncscccvl">
-                <img src="images/twitter-icon-desktop.svg" onmouseover="this.src='images/twitter-icon-hover.svg';" onmouseout="this.src='images/twitter-icon-desktop.svg';"/>
-            </a>
-        </div> -->
-        
-        <!-- read.cv redirect -->
-        <a id="desktop" href="https://read.cv/frncscccvl" target="_blank" style="display:relative; position:fixed; right:0.75%; bottom:0.75%; z-index:1;">
-            <img src="images/cv-redirect.svg"/>            
-        </a>
 
         <a id="experimental-mobile-device">
             <div style="display:flex; width:100%; height:100%; flex-direction:column; position:absolute; justify-content:center; align-items:center; transform: translate(-50%, -50%); top:50%; left:50%;">
@@ -248,7 +217,7 @@
                     <img src="images/email-icon-exp.svg"/>
                 </a>
 
-                <a href="https://read.cv/frncscccvl">
+                <a target="_blank" href="https://read.cv/frncscccvl">
                     <img src="images/cv-icon-exp.svg"/>
                 </a>
             </div>
@@ -259,6 +228,6 @@
 
     <!-- mobile element (footer) -->
     <!-- <footer id="mobile">
-        <p><center>&copy; 2022 FRANCIS CACCAVALE</p>
+        <p><center>&copy; 2023 FRANCIS CACCAVALE</p>
     </footer> -->
 </html>
