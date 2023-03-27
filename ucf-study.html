@@ -71,7 +71,19 @@
                 opacity: 0.4;
             }
 
+            #mobile {
+                display: none !important;
+            }
+
             @media screen and (max-width: 800px) {
+                #desktop {
+                    display: none !important;
+                }
+
+                #mobile {
+                    display: block !important;
+                }
+    
                 #subtext {
                     width: 91%;
                 }
@@ -81,7 +93,7 @@
                 }
 
                 #sarc-ca {
-                    width: 80%;
+                    width: 96%;
                 }
 
                 h1, h2, h5 {
@@ -122,15 +134,51 @@
             <li>What negatives do you identify as to broad social-networks online?</li>
         </ul>
 
+        <p id="subtext">After synthesizing results, common insights were:</p>
+        <ul>
+            <li>Transitioning into a cultured university creates a sense of shellshock or forms an edge</li>
+            <li>Social-media online is a broad paint stroke</li>
+        </ul>
+
+        <p id="subtext">A persona was able to emerge from this Google Forms questionaire. <em>See 'Persona A' below</em></p>
+
+        <div id="desktop" style="display:flex; width:76%; padding:10px 0px 10px; gap:8px;">
+            <a>
+                <img id="persona-a" src="images/ux-persona-sarc-b.svg" style="width:100%"/>
+                <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona A</p>
+            </a>
+
+            <a>
+                <img id="persona-b" src="images/ux-persona-sarc-a.svg" style="width:100%"/>
+                <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona B</p>
+            </a>
+        </div>
+
+        <a id="mobile" style="padding:10px 0px 10px">
+            <img id="persona-a" src="images/ux-persona-sarc-b.svg" style="width:100%"/>
+            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona A</p>
+        </a>
+
+        
+        <!-- Define Stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Define</h2>
 
+        <p id="subtext">Ultimately, pain points were surrounding an apex at Internet and university culture. A social-networking pivot was necessary to filter the needs of a particular user set, being incoming freshmen, and a recalibration of the Internet and university culture integral.</p>
+
+        <!-- Ideate Stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Ideate</h2>
 
-        <a>
-            <p id="subtext">As a resolve via sole concept and design, each student will create a UX design style ‘sticker-sheet’ which would instead feature personal attributes; whether that be a color palette, interests in their favorite typeface, a graph of their recent Spotify playlist and/or photographs instead of logos. This aggregate of stickersheets would then compile into an internal social network to create an economy of empathy and ultimately help passing rates.</p>
-            <center><img id="sarc-ca" src="images/sarc-competitive-audit.svg" style="display:block; padding:10px 0px 0px;"/>
-            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">A competitive audit was conducted in order to identify limitations of other similar concepts already in production, only to create an upper bound for this design.</p>
-        </a>
+        <p id="subtext">An example of an ideation technique utilised in this design was the ‘how might we…’ exercise. A ‘how might we…’ exercise begins with a problem statement only to break that larger challenge into smaller actionable pieces, as a divide and conquer approach.</p>
+        <ul>
+            <li>How might we create an interface to help faculty identify/empathize with students?</li>
+            <li>How might we let this interface be a user experience design style 'stickersheet'?</li>
+            <li>How might we let each student personalize the UX design style 'stickersheet' to their liking?</li>
+            <li>How might we create an internal social-network with these 'stickersheet' uploads?</li>
+        </ul>
+
+        <p id="subtext">As a resolve via sole concept and design, each student will create a UX design style ‘sticker-sheet’ which would instead feature personal attributes; whether that be a color palette, interests in their favorite typeface, a graph of their recent Spotify playlist and/or photographs instead of logos. This aggregate of stickersheets would then compile into an internal social network to create an economy of empathy and ultimately help passing rates.<br><br>A competitive audit was conducted in order to identify limitations of large-tech social-networks in production, only to create an upper bound for this design. <em>See below</em></p>
+        <center><img id="sarc-ca" src="images/sarc-competitive-audit.svg" style="display:block; padding:10px 0px 0px;"/>
+        <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Competitive audit</p>
 
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
 
