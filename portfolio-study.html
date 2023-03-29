@@ -34,7 +34,7 @@
             }
 
             #portfolio-journey-map {
-                width: 88%;
+                width: 72%;
             }
 
             h1, h2, h5 {
@@ -68,6 +68,10 @@
                 padding: 48px 0px 24px;
             }
 
+            #mobile {
+                display: none !important;
+            }
+
             #subtext {
                 color: #000000;
                 display: inline-block;
@@ -81,8 +85,12 @@
             }
 
             @media screen and (max-width: 800px) {
+                #desktop {
+                    display: none !important;
+                }   
+
                 #baseline-frames {
-                    width: 88%;
+                    width: 100%;
                 }
 
                 #hifi {
@@ -95,10 +103,6 @@
 
                 #subtext {
                     width: 91%;
-                }
-
-                #thumbnail {
-                    -webkit-tap-highlight-color: transparent;
                 }
 
                 h1, h2, h5 {
@@ -123,7 +127,11 @@
     </head>
 
     <body>
-        <a id="thumbnail" href="ux-portfolio.html">
+        <a id="mobile" href="ux-portfolio.html" style="display:block; -webkit-tap-highlight-color: transparent;">
+            <br><center><img src="images/portfolio-thumbnail.svg"/><br>
+        </a>
+
+        <a id="desktop" style="display:block; -webkit-tap-highlight-color: transparent;">
             <br><center><img src="images/portfolio-thumbnail.svg"/><br>
         </a>
 
@@ -165,7 +173,7 @@
             </ul>
         </a>
 
-        <a style="display: block; padding: 10px 0px 10px; width:88%;">
+        <a style="display: block; padding: 10px 0px 10px;">
             <center><img id="portfolio-journey-map" src="images/portfolio-journey-map.svg"/>
             <p id="subtext" style="text-align:center; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">User Journey Map</p>
             <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:32px 0px 0px; opacity: 1;">"I like how in the baseline mobile prototype, the project cards resemble an app drawer from an Android or iPhone device."</p>
