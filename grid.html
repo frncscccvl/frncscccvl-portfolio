@@ -54,9 +54,17 @@
                 #desktop-poetry-card {
                     display: none !important;
                 }
+
+                #desktop {
+                    display: none !important;
+                }
             }
 
             @media screen and (min-width: 801px) {
+                #mobile {
+                    display: none !important;
+                }
+
                 #mobile-poetry-card {
                     display: none !important;
                 }
@@ -69,7 +77,11 @@
     </head>
 
     <body>
-        <a id="bread-thumbnail" style="display:block" href="https://frncscccvl.com">
+        <a id="mobile" href="https://frncscccvl.com" style="display:block; -webkit-tap-highlight-color: transparent;">
+            <br><center><img src="images/bread-thumbnail.png"/><br>
+        </a>
+
+        <a id="desktop" style="display:block; -webkit-tap-highlight-color: transparent;">
             <br><center><img src="images/bread-thumbnail.png"/><br>
         </a>
 
