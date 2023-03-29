@@ -56,7 +56,20 @@
             }
 
             #sarc-ca {
+                width: 56%;
+            }
+
+            #sarc-sticker-div {
+                padding:1.5em 0 3em;
+                width: 96%;
+            }
+    
+            #sarc-sticker-exemplar {
                 width: 44%;
+            }
+
+            #sarc-sticker-ol {
+                width: 100%;
             }
 
             #subtext {
@@ -93,7 +106,22 @@
                 }
 
                 #sarc-ca {
-                    width: 96%;
+                    width: 100%;
+                }
+
+                #sarc-sticker-div {
+                    flex-direction: column;
+                    gap: 1.5em;
+                    width: 98%;
+                    padding:10px 0 10px;
+                }
+
+                #sarc-sticker-exemplar {
+                    width: 100%;
+                }
+
+                #sarc-sticker-ol {
+                    width: 92%;
                 }
 
                 h1, h2, h5 {
@@ -176,16 +204,34 @@
             <li>How might we create an internal social-network with these 'stickersheet' uploads?</li>
         </ul>
 
-        <p id="subtext">As a resolve via sole concept and design, each student will create a UX design style ‘sticker-sheet’ which would instead feature personal attributes; whether that be a color palette, interests in their favorite typeface, a graph of their recent Spotify playlist and/or photographs instead of logos. This aggregate of stickersheets would then compile into an internal social network to create an economy of empathy and ultimately help passing rates.<br><br>A competitive audit was conducted in order to identify limitations of large-tech social-networks in production, only to create an upper bound for this design. <em>See below</em></p>
+        <p id="subtext">As a resolve via sole concept and design, each student will create a user experience design style ‘sticker-sheet’ which would instead feature personal attributes; whether that be a color palette, topics written with their favorite typeface, a graph of their recent Spotify playlist, a photograph and an ability to share lecture notes. This aggregate of stickersheets would then compile into an internal social-network to create a local economy of empathy and ultimately help passing rates.<br><br>A competitive audit was conducted in order to identify limitations of large-tech social-networks in production, only to create an upper bound for this design and help justify an internal social-network. <em>See below</em></p>
         <center><img id="sarc-ca" src="images/sarc-competitive-audit.svg" style="display:block; padding:10px 0px 0px;"/>
         <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Competitive audit</p>
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Sarc-Sticker Exemplar</h2>
+        <p id="subtext" style="display:block">As to this design, the user population will have the same stickersheet template for the sake of organization and ease of use. A user will only need to fill the blanks. Contrary to the belief of a too restrictive template to a whole user set, as this design is meant to be fleeting, given only to first year students.<br><br>This 'stickersheet' template is similar to my mobile portfolio interface. Hooray, for reusable components!</p>
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Test</h2>
+        <div id="sarc-sticker-div" style="display:flex; width:96%; align-items:center; justify-content:center">
+            <img id="sarc-sticker-exemplar" src="images/sarc-sticker-exemplar.svg"/>
+            <ol id="sarc-sticker-ol">
+                <li style="width:100%">A clear image of each user.</li><br>
+                <li style="width:100%">Relevant icons with color-accessible vectors pointing to each subject matter.</li><br>
+                <li style="width:100%">Each user would display their respective major.</li><br>
+                <li style="width:100%">Each user can continuously update an example of a recent Spotify playlist.</li><br>
+                <li style="width:100%">A color palette for each user to individually express.</li><br>
+                <li style="width:100%">Customizable footer icons: Ex. A 'Google Docs' icon in that any user may share their recent notes with fellow users, who may be classmates. A 'Github' icon in that any computer science student can share some snippets of code from a professor's lecture notes. An 'Email' icon, as any user can send an email to another user's student email address. A 'Google Slides' icon, as a user may display their recent presentation.</li>
+            </ol>
+        </div>
+
+        <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:0px 0px 16px; opacity: 1;">No advertisements, No gimmicks</p>    
+        <p id="subtext">Note the absence of any lineage to external social-networks, i.e. Twitter, Instagram, Facebook et cetera.</p>
+
+        <div>
+            <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
+        </div>
     </body>
 
-    <footer>
+    <footer style="display:block; clear: both;">
         <div class="project-thumbnails">
             <a>
                 <img src="images/blurate-thumbnail.svg"/>
