@@ -73,9 +73,7 @@
 }
 
 @media (orientation: portrait) {
-    div.experimental-nav {
-        display: none !important;
-    }
+    
 }
 
 
