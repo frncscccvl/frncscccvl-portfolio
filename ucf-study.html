@@ -50,7 +50,7 @@
             .project-thumbnails {
                 align-items: center;
                 display: flex;
-                gap: 32px;
+                gap: 2%;
                 justify-content: center;
                 padding: 48px 0px 24px;
             }
@@ -140,12 +140,16 @@
             <br><center><img src="images/ucf-thumbnail.svg"/><br>
         </a>
 
-        <a>
-            <br><center><img src="images/attempt.svg"/><br>
+        <a id="desktop" style="display:block">
+            <br><center><img src="images/ucf-mockup.png" style="width:88%;"/><br>
+        </a>
+
+        <a id="mobile" style="display:block">
+            <br><center><img src="images/ucf-mockup.png" style="width:91%;"/><br>
         </a>
 
         <div id="header">
-            <h5 style="font-size:18px; line-height:30px; letter-spacing:0.5px; padding:0px; margin:0px; margin-top:2em;">Case Study</h5><h1 style="font-size: 56px; letter-spacing:-0.3px; line-height:66px; padding:0px; margin:0px;">A User Experience for UCF: Student Access Resource Center</h1><h2 style="font-size: 24px; font-weight:400; margin:12px 0px 23px;">A conceptualization into material view</h2>
+            <h5 style="font-size:18px; line-height:30px; letter-spacing:0.5px; padding:0px; margin:0; margin-top:2em;">Case Study</h5><h1 style="font-size: 56px; letter-spacing:-0.3px; line-height:66px; padding:0px; margin:0px;">A User Experience for UCF: Student Access Resource Center</h1><h2 style="font-size: 24px; font-weight:400; margin:12px 0px 23px;">A conceptualization into material view</h2>
             <p id="subtext" style="font-size:16px; font-weight:500; line-height:20px; letter-spacing:0.3px; margin: 0px; padding:0px;">By FRANCIS CACCAVALE</p>
             <p id="subtext" style="margin-top:3em">A holistic-approach design as a user experience to help a university increase undergraduate pass rates, especially for introductory courses given to first year students.</p>
         </div>
@@ -204,7 +208,7 @@
             <li>How might we create an internal social-network with these 'stickersheet' uploads?</li>
         </ul>
 
-        <p id="subtext">As a resolve via sole concept and design, each student will create a user experience design style ‘sticker-sheet’ which would instead feature personal attributes; whether that be a color palette, topics written with their favorite typeface, a graph of their recent Spotify playlist, a photograph and an ability to share lecture notes. This aggregate of stickersheets would then compile into an internal social-network to create a local economy of empathy and ultimately help passing rates.<br><br>A competitive audit was conducted in order to identify limitations of large-tech social-networks in production, only to create an upper bound for this design and help justify an internal social-network. <em>See below</em></p>
+        <p id="subtext">As a resolve via sole concept and design, each student will create a user experience design style ‘sticker-sheet’ which would instead feature personal attributes; whether that be a color palette, cards written with their favorite typeface, an example of a recent Spotify playlist, a photograph, an ability to share lecture notes and other features. This aggregate of stickersheets would then compile into an internal social-network to create a local economy of empathy and ultimately help passing rates.<br><br>A competitive audit was conducted in order to identify limitations of large-tech social-networks in production, only to create an upper bound for this design and help justify an internal social-network. <em>See below</em></p>
         <center><img id="sarc-ca" src="images/sarc-competitive-audit.svg" style="display:block; padding:10px 0px 0px;"/>
         <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Competitive audit</p>
 
@@ -223,26 +227,35 @@
             </ol>
         </div>
 
-        <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:0px 0px 16px; opacity: 1;">No advertisements, No gimmicks</p>    
+        <hr color="#e5e3e2" size="0.8px">
+        <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:32px 0px 16px; opacity: 1;">No advertisements, No gimmicks</p>    
         <p id="subtext">Note the absence of any lineage to external social-networks, i.e. Twitter, Instagram, Facebook et cetera.</p>
-
+        <!-- 'Prototype' stage -->
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
+        <p id="subtext">A high-fidelity prototype was made with Figma.<em> (below)</em></p><br>
+        
         <div>
-            <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
+            <video controls width="360" muted="true" autoplay="true" loop="true" style="display:block; margin:10px 0 0;">
+                <source src="videos/sarc-app-walkthrough.webm" type="video/webm">
+            </video>
+            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 10px;">General walkthrough of app</p>
         </div>
+
+        <p id="subtext">A general feed represents students and teacher assistants from a user's class schedule for the semester, plus items from clubs and organizations (i.e. robotics club, men's baseball, women's basketball) featuring their home schedules and some statistics.</p>
     </body>
 
-    <footer style="display:block; clear: both;">
+    <footer style="display:block;">
         <div class="project-thumbnails">
             <a>
                 <img src="images/blurate-thumbnail.svg"/>
             </a>
             
             <a>
-                <img src="images/notarybyagnes-thumbnail.svg"/>
+                <img src="images/null-thumbnail.svg"/>
             </a>    
     
             <a>
-                <img src="images/ucf-thumbnail.svg"/>
+                <img src="images/portfolio-thumbnail.svg"/>
             </a>
         </div>
     </footer>
