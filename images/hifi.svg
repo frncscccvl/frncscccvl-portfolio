@@ -121,7 +121,7 @@
 <circle cx="1694" cy="277" r="20" transform="rotate(-90 1694 277)" fill="black"/>
 <circle cx="1750" cy="277" r="20" transform="rotate(-90 1750 277)" fill="black"/>
 <g filter="url(#filter5_d_1300_476)">
-<rect x="1652" y="89" width="140" height="140" rx="8" fill="url(#pattern5)" shape-rendering="crispEdges"/>
+<rect x="1650" y="89" width="144" height="144" rx="16" fill="url(#pattern5)" shape-rendering="crispEdges"/>
 </g>
 <rect x="1430" y="345" width="584" height="801.63" rx="1" fill="url(#pattern6)"/>
 </g>
@@ -131,7 +131,7 @@
 <circle cx="2379" cy="275" r="20" transform="rotate(-90 2379 275)" fill="black"/>
 <circle cx="2435" cy="275" r="20" transform="rotate(-90 2435 275)" fill="black"/>
 <g filter="url(#filter6_d_1300_476)">
-<rect x="2335" y="87" width="144" height="144" rx="8" fill="#424242"/>
+<rect x="2335" y="87" width="144" height="144" rx="16" fill="#424242"/>
 <g clip-path="url(#clip12_1300_476)">
 <path d="M2407.32 225.316C2443.94 225.316 2473.63 195.626 2473.63 159C2473.63 122.375 2443.94 92.6846 2407.32 92.6846C2370.69 92.6846 2341 122.375 2341 159C2341 195.626 2370.69 225.316 2407.32 225.316Z" fill="#B5AAA8"/>
 <path d="M2383.21 113.639L2398.95 99.2085L2466.57 166.829L2452.6 183.408L2449.22 179.878C2449.22 179.878 2456.06 164.987 2448.84 157.082C2441.63 149.177 2434.56 141.961 2434.56 141.961L2385.36 190.547C2385.36 190.547 2375.31 198.222 2386.82 209.274L2383.6 212.882L2352.9 182.718L2356.43 178.957C2356.43 178.957 2365.72 191.084 2374.85 181.26C2383.98 171.435 2424.43 132.06 2424.43 132.06L2409 117.016C2409 117.016 2400.72 110.953 2386.36 116.632L2383.21 113.639Z" fill="#0D0708"/>
@@ -230,7 +230,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1300_476"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1300_476" result="shape"/>
 </filter>
-<filter id="filter5_d_1300_476" x="1648" y="89" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter5_d_1300_476" x="1646" y="89" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>

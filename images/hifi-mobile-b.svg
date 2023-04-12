@@ -5,7 +5,7 @@
 <circle cx="324" cy="277" r="20" transform="rotate(-90 324 277)" fill="black"/>
 <circle cx="380" cy="277" r="20" transform="rotate(-90 380 277)" fill="black"/>
 <g filter="url(#filter0_d_1379_246)">
-<rect x="282" y="89" width="140" height="140" rx="8" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+<rect x="280" y="89" width="144" height="144" rx="16" fill="url(#pattern0)" shape-rendering="crispEdges"/>
 </g>
 <rect x="60" y="345" width="584" height="801.63" rx="1" fill="url(#pattern1)"/>
 </g>
@@ -15,7 +15,7 @@
 <circle cx="1009" cy="277" r="20" transform="rotate(-90 1009 277)" fill="black"/>
 <circle cx="1065" cy="277" r="20" transform="rotate(-90 1065 277)" fill="black"/>
 <g filter="url(#filter1_d_1379_246)">
-<rect x="965" y="89" width="144" height="144" rx="8" fill="#424242"/>
+<rect x="965" y="89" width="144" height="144" rx="16" fill="#424242"/>
 <g clip-path="url(#clip2_1379_246)">
 <path d="M1037.32 227.316C1073.94 227.316 1103.63 197.626 1103.63 161C1103.63 124.375 1073.94 94.6846 1037.32 94.6846C1000.69 94.6846 971 124.375 971 161C971 197.626 1000.69 227.316 1037.32 227.316Z" fill="#B5AAA8"/>
 <path d="M1013.21 115.639L1028.95 101.208L1096.57 168.829L1082.6 185.408L1079.22 181.878C1079.22 181.878 1086.06 166.987 1078.84 159.082C1071.63 151.177 1064.56 143.961 1064.56 143.961L1015.36 192.547C1015.36 192.547 1005.31 200.222 1016.82 211.274L1013.6 214.882L982.896 184.718L986.428 180.957C986.428 180.957 995.716 193.084 1004.85 183.26C1013.98 173.435 1054.43 134.06 1054.43 134.06L1039 119.016C1039 119.016 1030.72 112.953 1016.36 118.632L1013.21 115.639Z" fill="#0D0708"/>
@@ -45,7 +45,7 @@
 <circle cx="1009" cy="1188" r="28" fill="#3C4043"/>
 <path d="M1017.53 1194.7H1014.11V1200H1011.58V1194.7H1000.53V1192.52L1011.41 1177.03H1014.11V1192.36H1017.53V1194.7ZM1011.58 1192.36V1184.89C1011.58 1184.32 1011.58 1183.8 1011.59 1183.34C1011.6 1182.88 1011.62 1182.44 1011.64 1182.05C1011.66 1181.64 1011.68 1181.26 1011.69 1180.89C1011.71 1180.53 1011.72 1180.17 1011.73 1179.81H1011.61C1011.41 1180.23 1011.18 1180.67 1010.92 1181.14C1010.67 1181.6 1010.42 1182.01 1010.16 1182.38L1003.11 1192.36H1011.58Z" fill="#FFFDF8"/>
 <defs>
-<filter id="filter0_d_1379_246" x="278" y="89" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_1379_246" x="276" y="89" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
