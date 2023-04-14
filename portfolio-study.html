@@ -11,10 +11,6 @@
                 src: url("typeface/ChromaticaTrial-Regular.otf");
             }
 
-            html {
-                -webkit-tap-highlight-color: #CDEBC2;
-            }
-
             body {
                 background-color: #FAFAFA;
                 font-family: 'Chromatica';
@@ -23,6 +19,10 @@
 
             img {
                 max-width: 100%;
+            }
+        
+            ::selection {
+                background: #CDEBC2;
             }
 
             #baseline-frames {
@@ -136,7 +136,7 @@
         </a>
 
         <a id="desktop" style="display:block; margin:0;">
-            <br><center><img src="images/portfolio-mockup.png" style="max-width:88%;"/>
+            <br><center><img src="images/portfolio-mockup.png" style="width:88%;"/>
         </a>
 
         <a id="mobile" style="display:block; margin:0">
@@ -225,7 +225,7 @@
         </a>
     </body>
 
-    <footer id="mobile">
+    <footer id="mobile" style="display:block; -webkit-tap-highlight-color:transparent;">
         <div class="project-thumbnails">
             <a href="blurate-study.html">
                 <img src="images/blurate-thumbnail.svg"/>

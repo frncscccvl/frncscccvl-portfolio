@@ -10,10 +10,6 @@
                 src: url("typeface/ChromaticaTrial-Regular.otf");
             }
 
-            html {
-                -webkit-tap-highlight-color: rgb(205, 235, 194, .88);
-            }
-
             body {
                 background-color: #FAFAFA;
                 font-family: 'Chromatica';
@@ -22,6 +18,10 @@
 
             img {
                 max-width: 100%;
+            }
+
+            ::selection {
+                background: #CDEBC2;
             }
 
             h1, h2, h5 {
@@ -148,9 +148,9 @@
             <br><center><img src="images/ucf-thumbnail.svg"/><br>
         </a>
 
-        <br><div id="desktop" style="display:flex; width:91%; align-items:center; justify-content:center; gap:16px;">
+        <br><div id="desktop" style="display:flex; width:88%; align-items:center; justify-content:center; gap:16px;">
             <div><img src="images/ucf-mockup-i.png" style="width:100%;"/></div>
-            <div><img src="images/ucf-mockup-ii.svg" style="width:100%;"/></div>
+            <div><img src="images/ucf-mockup-ii.png" style="width:100%;"/></div>
         </div><br>
 
         <a id="mobile" style="display:block">
@@ -165,7 +165,7 @@
 
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Empathize</h2>
 
-        <p id="subtext">Given how the heights of both society and Internet have come to integrate, an obvious scenario was to question how the individual student and Internet integral may configure in an existing university culture, respectfully.</p>
+        <p id="subtext">Given how the heights of both society and Internet have come to integrate, an obvious scenario was to question how the individual student and Internet integral is configured in an existing university culture, respectfully.</p>
 
         <p id="subtext">Twenty sophomore students were given a questionaire via Google Forms with some example questions being:</p>
         <ul>
@@ -232,7 +232,7 @@
                 <li style="width:100%; margin:2% 0 2%;">Each user would display their respective major.</li><br>
                 <li style="width:100%; margin:2% 0 2%;">Each user can continuously update an example of a recent Spotify playlist.</li><br>
                 <li style="width:100%; margin:2% 0 2%;">A color palette for each user to individually express.</li><br>
-                <li style="width:100%; margin:2% 0 2%;">Customizable footer icons; ex. a 'Google Docs' icon in that any user may share their recent notes with fellow users, who may be classmates; a 'Github' icon in that any computer science student can share some snippets of code from a professor's lecture notes; an 'Email' icon, as any user can send an email to another user's student email address; a 'Google Slides' icon, as a user may display their recent presentation; a 'Bookmarks' icon, as a user may compartmentalize 'liked' sarc-stickers.</li>
+                <li style="width:100%; margin:2% 0 2%;">Customizable footer icons; ex. a 'Google Docs' icon in that any user may share their recent notes with fellow users, who may be classmates; a 'Github' icon in that any computer science student can share some snippets of code from a professor's lecture notes; an 'Email' icon, as any user can send an email to another user's student email address; a 'Google Slides' icon, as a user may display their recent presentation; a 'Bookmarks' icon, as a user may compartmentalize 'liked' sarc-stickers; teacher assistants may post their office hours or announcements et cetera.</li>
             </ol>
         </div>
 
@@ -241,7 +241,23 @@
         <p id="subtext">Note the absence of any lineage to external social-networks, i.e. Twitter, Instagram, Facebook et cetera.</p>
         <!-- 'Prototype' stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
-        <p id="subtext">A high-fidelity prototype was made with Figma.<em> (below)</em></p><br>
+        <p id="subtext">A high-fidelity prototype was made with Figma.<em> Below</em></p><br>
+
+        <div id="desktop" style="display:flex; width:88%; align-items:center; justify-content:center; margin:10px 0 10px; gap:2%;">
+            <a>
+                <video controls width="360px" muted="true" autoplay="true" loop="true">
+                    <source src="videos/sarc-app-walkthrough.webm" type="video/webm">
+                </video>
+                <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 0;">General walkthrough of app with FAQ, Upload and Bookmark modules</p>
+            </a>
+
+            <a>
+                <video controls width="360px" muted="true" autoplay="true" loop="true">
+                    <source src="videos/sarc-app-walkthrough-ii.webm" type="video/webm">
+                </video>
+                <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 0;">A user can filter their feed with a specific course from their class schedule</p>
+            </a>
+        </div>
         
         <div id="mobile">
             <video controls width="91%" muted="true" autoplay="true" loop="true" style="display:block; margin:10px 0 0;">
@@ -253,7 +269,7 @@
         <p id="subtext">A general feed represents students and teacher assistants from a user's class schedule for the semester, plus items from clubs and organizations (i.e. robotics club, men's baseball, women's basketball) featuring their home schedules and some statistics.</p>
     </body>
 
-    <footer id="mobile" style="display:block">
+    <footer id="mobile" style="display:block; -webkit-tap-highlight-color:transparent;">
         <div class="project-thumbnails">
             <a href="blurate-study.html">
                 <img src="images/blurate-thumbnail.svg"/>
