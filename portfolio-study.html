@@ -76,10 +76,15 @@
                 letter-spacing: 0.1px;
                 line-height: 30px;
                 text-align: start;
-                width: 56%;
                 opacity: 0.4;
             }
 
+            @media screen and (min-width: 801px) {
+                #subtext {
+                    max-width: 56%;
+                }
+            }    
+        
             @media screen and (max-width: 800px) {
                 #desktop {
                     display: none !important;
