@@ -61,6 +61,7 @@
                 gap: 1%;
                 justify-content: center;
                 padding: 48px 0px 24px;
+                width: 96%;
             }
 
             #mobile {
@@ -100,26 +101,23 @@
                     width: 100%;
                 }
 
-                #subtext {
-                    width: 96%;
+                #subtext {        
+                    width: 91%;
+                    overflow-wrap: break-word;
                 }
 
                 h1, h2, h5 {
                     width: 96%;
+                    overflow-wrap: break-word;
                 }
 
                 ul {
-                    display: flex;
-                    flex-direction: column;
-                    width: 91%;
-                }
-
-                ul li {
-                    flex: 1;
+                    padding-left: 2%;
                 }    
 
                 li, hr, ol {
-                    width: 91%;
+                    width: 88%;
+                    overflow-wrap: break-word;
                 }
             }
         </style>
@@ -143,21 +141,20 @@
         </a>
 
         <img id="desktop" src="images/home-redirect.svg" style="display:flex; position:fixed; bottom:1.5%; left:1%;"/>
-
-        <a id="header">
+        <!-- header -->
+        <a>
             <h5 style="font-size:18px; line-height:30px; letter-spacing:0.5px; padding:0px; margin:0px; margin-top:2em;">Case Study</h5><h1 style="font-size: 56px; letter-spacing:-0.3px; line-height:66px; padding:0px; margin:0px;">A User Experience for a Portfolio & Website</h1><h2 style="font-size: 24px; font-weight:400; margin:12px 0px 23px;">Portfolio UX/UI seeks minute optimizations</h2>
-            <p id="subtext" style="font-size:16px; font-weight:500; line-height:20px; letter-spacing:0.3px; margin: 0px; padding:0px;">By FRANCIS CACCAVALE</p>
-            <p id="subtext" style="margin-top:3em">An optimization-seeking design approaching a portfolio/website in conjunction with responsive design while attributing to some identity that a user can relate to.</p>
+            <p id="subtext" style="font-size:16px; font-weight:500; line-height:20px; letter-spacing:0.3px; margin: 0px; padding:0px; width:96%;">By FRANCIS CACCAVALE</p>
+            <p id="subtext" style="margin-top:3em; width:96%;">An optimization-seeking design approaching a portfolio/website in conjunction with responsive design while attributing to some identity that a user can relate to.</p>
         </a>
 
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Narrowing optimizations</h2>
 
-        <a id="intro-text">
-            <p id="subtext">A primary target in this design was to seek small yet poignant optimizations, that will help a relatively trivial website/portfolio convey information at lightning speed yet retain aesthetics.</p>
-        </a>
+        <!-- problem statement -->
+        <p id="subtext" style="width:96%;">A primary target in this design was to seek small yet poignant optimizations, that will help a relatively trivial website/portfolio convey information at lightning speed yet retain aesthetics.</p>
 
-        <a id="interview-question-li">
-            <p id="subtext">A portfolio/website user-interface and user-experience has seen numerous iterations, maybe tens of thousands. A new threshhold begins as to whether an individual wants to generate a generic 'Squarespace et cetera' template or try a hand at html/css into the influence of Squarespace templates. The only issue is that after Squarespace generates hundreds of portfolio templates for individuals globally, the landscape may become complacent as to 'this is what a portfolio has to be, UI, fonts, colors et cetera'. This design intends to create a stochastic approach to break a mold, which means to create a baseline prototype solely from experience and build a design process from a prototype.<br><br>After creating an initial low-fidelity prototype based purely from experience to create some level of a baseline, interviews were conducted as users were aware the prototype is a portfolio style website. Some example interview questions were:</p>
+        <a>
+            <p id="subtext" style="width:96%;">A portfolio/website user-interface and user-experience has seen numerous iterations, maybe tens of thousands. A new threshhold begins as to whether an individual wants to generate a generic 'Squarespace et cetera' template or try a hand at html/css into the influence of Squarespace templates. The only issue is that after Squarespace generates hundreds of portfolio templates for individuals globally, the landscape may become complacent as to 'this is what a portfolio has to be, UI, fonts, colors et cetera'. This design intends to create a stochastic approach to break a mold, which means to create a baseline prototype solely from experience and build a design process from a prototype.<br><br>After creating an initial low-fidelity prototype based purely from experience to create some level of a baseline, interviews were conducted as users were aware the prototype is a portfolio style website. Some example interview questions were:</p>
             <li>Which elements do you think are clickable?</li>
             <li>Did the image collage create a dizzying effect?</li>
             <li>Can you assume who may need a website such as this?</li>
@@ -168,17 +165,17 @@
             <p id="subtext" style="text-align:center; width:88%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Frame 1 is a baseline navigation pane. Frame 2 is a baseline 'Homepage' exhibiting a small introduction and case study cards. Frame 3 is a baseline 'About' pane featuring a collage of images. Frame 4 is a case study outline.</p>
         </a>
 
-        <a id="insight-list">
-            <p id="subtext">Ensuing are key insights:</p>
+        <div>
+            <p id="subtext" style="width:96%;">Ensuing are key insights:</p>
             <ul>
                 <li id="subtext"><span style="font-weight:700">Optimizations&ensp;</span>What methods will convey information at lightning speed yet aesthetically?</li>
                 <li id="subtext"><span style="font-weight:700">Identity&ensp;</span>Will the portfolio have an identity to correspond?</li>
                 <li id="subtext"><span style="font-weight:700">Minimalism&ensp;</span>While creating optimizations for the website, can the user identify what the website initially is?</li>
                 <li id="subtext"><span style="font-weight:700">Navigating&ensp;</span>Does the website create sound eye traversals, as if observing an oil painting?</li>
             </ul>
-        </a>
+        </div>
 
-        <a style="display: block; padding: 10px 0px 10px;">
+        <a style="display:block; padding: 10px 0px 10px;">
             <center><img id="portfolio-journey-map" src="images/portfolio-journey-map.svg"/>
             <p id="subtext" style="text-align:center; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">User Journey Map</p>
             <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:32px 0px 0px; opacity: 1;">"I like how in the baseline mobile prototype, the project cards resemble an app drawer from an Android or iPhone device."</p>
@@ -188,41 +185,41 @@
 
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
 
-        <a id="addressing-insights">
-            <p id="subtext">Beginning the design (after the baseline phase) means addressing each critical insight.</p>
-            <p id="subtext">A key optimization (particularly to the mobile version) was to emphasize project cards as an app drawer from an Android or iPhone device. A user will immediately associate each case study as a potential app or similar experience. <em>See Frame 2 (below)</em></p>
+        <a>
+            <p id="subtext" style="width:96%;">Beginning the design (after the baseline phase) means addressing each critical insight.</p>
+            <p id="subtext" style="width:96%;">A key optimization (particularly to the mobile version) was to emphasize project cards as an app drawer from an Android or iPhone device. A user will immediately associate each case study as a potential app or similar experience. <em>See Frame 2 (below)</em></p>
             <center><img id="desktop" style="display:block; padding:10px 0px 0px; width:80%;" src="images/hifi.svg"/>
             <center><img id="mobile" style="display:block; padding:10px 0 0;"src="images/hifi-mobile-a.svg"/>
             <p id="subtext" style="text-align:center; width:88%; font-size:14px; padding:0px 0px 10px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Responsive frames</p>
-            <p id="subtext">In terms of navigation, color accented vectors will help trace user's eyes towards the project-cards, respectfully. Letting the background color of black (#000000) with an opacity of 40%, creates a middle-ground of light and dark modes as an optimization of sorts. <em>See Frame 1 (above)</em></p>
+            <p id="subtext" style="width:96%;">In terms of navigation, color accented vectors will help trace user's eyes towards the project-cards, respectfully. Letting the background color of black (#000000) with an opacity of 40%, creates a middle-ground of light and dark modes as an optimization of sorts. <em>See Frame 1 (above)</em></p>
             <a id="mobile">        
                 <center><img style="display:block; padding:10px 0 0;"src="images/hifi-mobile-b.svg"/>
                 <p id="subtext" style="text-align:center; width:88%; font-size:14px; padding:0px 0px 10px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Responsive frames</p>
             </a>
-            <p id="subtext">To help identify the designer as to this particular instance, a small collection of poems is available copyrighted and authored by me. Exhibiting multiple facets of the particular field may increase dynamacism to the portfolio as a whole. <em>See Frame 3 (above)</em></p>
-            <p id="subtext">As a minimalistic approach to the desktop aspect, a decision was made to let this website be a single-column website with hovering effects rather than navigating to different webpages. A hover will initialize a legible iframe of a case study, however, this is only the case as to desktop; the mobile version will have thumbnails within each html page to reference the previous webpage.</p>
+            <p id="subtext" style="width:96%;">To help identify the designer as to this particular instance, a small collection of poems is available copyrighted and authored by me. Exhibiting multiple facets of the particular field may increase dynamacism to the portfolio as a whole. <em>See Frame 3 (above)</em></p>
+            <p id="subtext" style="width:96%;">As a minimalistic approach to the desktop aspect, a decision was made to let this website be a single-column website with hovering effects rather than navigating to different webpages. A hover will initialize a legible iframe of a case study, however, this is only the case as to desktop; the mobile version will have thumbnails within each html page to reference the previous webpage.</p>
         </a>
 
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Test</h2>
 
         <a style="display:block; padding:0px 0px 10px;">
-            <p id="subtext" style="padding:0px 0px 8px;">A moderated usability study was made with given tasks and prompts conjuncting with a ‘think-aloud protocol’.</p>
+            <p id="subtext" style="padding:0px 0px 8px; width:96%;">A moderated usability study was made with given tasks and prompts conjuncting with a ‘think-aloud protocol’.</p>
             <center><img src="images/diagram-a.svg"/>
             <p id="subtext" style="display:block; text-align:center; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">An executive decision was made into the final implementation to omit javascript. One advantage of omitting javascript is that a ‘search keyword’ function (ctrl-f) is already built into most browsers.</p>
-            <p id="subtext">Ensuing are two critical findings throughout this usability study:</p>
+            <p id="subtext" style="width:96%;">Ensuing are two critical findings throughout this usability study:</p>
             <ol id="subtext">1. <span style="font-weight:700">Omission of javascript</span></ol>
-            <p id="subtext">An initial finding was that an effective portfolio/website can go quite far with only html/css as a static website. One can omit optional javascript to ensure speed of the website.</p>
+            <p id="subtext" style="width:96%;">An initial finding was that an effective portfolio/website can go quite far with only html/css as a static website. One can omit optional javascript to ensure speed of the website.</p>
             <ol id="subtext">2. <span style="font-weight:700">Opt a single-column website</span></ol>
-            <p id="subtext">A user opening html pages in new tabs while navigating may distract or create an arbitrary time-lapse, even if only an illusion. <em>Applicable only to desktop</em></p>
+            <p id="subtext" style="width:96%;">A user opening html pages in new tabs while navigating may distract or create an arbitrary time-lapse, even if only an illusion. <em>Applicable only to desktop</em></p>
         </a>
 
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Takeaways</h2>
     
         <a style="padding:0px 0px 10px">
-            <p id="subtext" style="padding:0px 0px 10px">A design impact may be the emphasis to push html/css to the limits before the thought of javascript. Some users are aware to the fact that javascript may collect personal data arbitrarily and may create security issues, i.e. what Richard Stallman would identify as ‘the javascript trap’. A theme throughout this design seemingly is how to triangulate tiny optimizations into a high-exchanging proffer.</p>
+            <p id="subtext" style="padding:0px 0px 10px; width:96%;">A design impact may be the emphasis to push html/css to the limits before the thought of javascript. Some users are aware to the fact that javascript may collect personal data arbitrarily and may create security issues, i.e. what Richard Stallman would identify as ‘the javascript trap’. A theme throughout this design seemingly is how to triangulate tiny optimizations into a high-exchanging proffer.</p>
             <center><img src="images/portfolio-ui.svg"/>
             <p id="subtext" style="display:block; text-align:center; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; padding:0px 0px 10px">UI style guide</p>
-            <p id="subtext">A primary takeaway from this design, is the idea to encapsulate a dynamicism of the user experience design field into a portfolio; as to fitting as many UX aspects into the portfolio as possible, aspects being the many subsets of UX: engineering, interaction, researching, writing et cetera.</p>
+            <p id="subtext" style="width:96%;">A primary takeaway from this design, is the idea to encapsulate a dynamicism of the user experience design field into a portfolio; as to fitting as many UX aspects into the portfolio as possible, aspects being the many subsets of UX: engineering, interaction, researching, writing et cetera.</p>
         </a>
     </body>
 
