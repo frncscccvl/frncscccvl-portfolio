@@ -82,7 +82,12 @@ hr {
         width: 96%;
     }
 
-    li, ol, hr {
-        width: 91%;
+    li, ol, ul {
+        left-padding: 4%;
+        width: 96%;
+    }
+
+    hr {
+        width: 96%;
     }
 }
