@@ -40,6 +40,12 @@ hr {
     width: 56%;
 }
 
+.home-redirect {
+    position: fixed;
+    bottom:2%; 
+    left:0.75%;    
+}
+
 .project-thumbnails {
     align-items: center;
     display: flex;
@@ -83,8 +89,8 @@ hr {
     }
 
     li, ol, ul {
-        left-padding: 4%;
-        width: 96%;
+        left-padding: 8px;
+        width: 88%;
     }
 
     hr {
