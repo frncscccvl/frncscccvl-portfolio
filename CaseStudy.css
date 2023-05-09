@@ -46,6 +46,10 @@ hr {
     left:0.75%;    
 }
 
+.home-redirect:hover {
+    transform: translateX(-4%);
+}
+
 .project-thumbnails {
     align-items: center;
     display: flex;
