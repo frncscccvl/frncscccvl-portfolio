@@ -7,7 +7,29 @@
         <link rel="stylesheet" href="CaseStudy.css" media="screen">
 
         <style>
-            <!-- style input -->
+            /*::selection {
+                background: #CDEBC2;
+            }*/
+
+            .widget-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .widget-icon {
+                height: 50%;
+                width: 25%;
+            }
+
+            @media screen and (min-width: 801px) {
+
+            }
+
+            @media screen and (max-width: 800px) {
+                
+            }
         </style>
     </head>
 
@@ -20,26 +42,140 @@
             <br><center><img src="images/cli-thumbnail.svg"/><br>
         </a>
 
+        <a style="display:block; width:96%:">
+            <br><img src="images/cli-init.svg"/><br>
+        </a>
+
         <img id="desktop" class="home-redirect" src="images/home-redirect.svg"/>
 
         <div id="header">
-            <h5 style="font-size:18px; line-height:30px; letter-spacing:0.5px; padding:0px; margin:0px; margin-top:2em;">Case Study</h5><h1 style="font-size: 56px; letter-spacing:-0.3px; line-height:66px; padding:0px; margin:0px;">A User Experience for a Command-Line Interface</h1><h2 style="font-size: 24px; font-weight:400; margin:12px 0px 23px;">CLI Alternative</h2>
+            <h5 style="font-size:18px; line-height:30px; letter-spacing:0.5px; padding:0px; margin:0px; margin-top:2em;">Case Study</h5><h1 style="font-size: 56px; letter-spacing:-0.3px; line-height:66px; padding:0px; margin:0px;">A User Experience for a Command-Line Interface</h1><h2 style="font-size: 24px; font-weight:400; margin:12px 0px 23px;">A complementary CLI asset</h2>
             <p id="subtext" style="font-size:16px; font-weight:500; line-height:20px; letter-spacing:0.3px; margin: 0px; padding:0px;">By FRANCIS CACCAVALE</p>
-            <p id="subtext" style="margin-top:3em">In The Works...</p>
+            <p id="subtext" style="margin-top:3em">A fresh, feature-rich terminal while balancing what is quintessentially minimalistic at a CLI's root historically. A user experience pointing at user sets utilising a terminal often, as to programming, informatics or system administration.</p>
         </div>
 
-        <a style="margin-top:3em">
+        <!-- 'empathize' stage -->
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Empathize</h2>
+        
+        <p id="subtext">A questionnaire was made via Google Forms and embedded within an array of relevant 'subreddits' as to the 'Reddit' platform. Said subreddit array did include 'r/bash', 'r/php', 'r/sysadmin' et cetera. Some example questions:</p>
+
+        <ul>
+            <li>As to programming or scripting, what do you dislike about an integrated development environment (IDE)?</li>
+            <li>What are some ordinary tasks you initialise in a terminal window?</li>
+            <li>What resources do you sometimes seek outside of a terminal window while debugging or administrating? Does any said auxiliary search disrupt workflow?</li>
+        </ul>
+
+        <p id="subtext">After synthesizing results, common insights were:</p>
+
+        <ul>
+            <li>A terminal has to retain essence (i.e. minimalism) while resolving some edge cases.</li>
+            <li>Resolving edge cases has to flow in a way to not disupt workflow.</li>
+        </ul>
+
+        <p id="subtext">A persona was able to emerge from this Google Forms questionnaire. <em>See Persona A below</em></p>
+
+        <div id="desktop" style="display:flex; width:76%; padding:10px 0px 10px; gap:8px;">
+            <a>
+                <img id="persona-a" src="images/ux-persona-cli-a.svg" style="width:100%"/>
+                <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona A</p>
+            </a>
+
+            <a>
+                <img id="persona-b" src="images/ux-persona-cli-b.svg" style="width:100%"/>
+                <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona B</p>
+            </a>
+        </div>
+
+        <a id="mobile" style="padding:10px 0px 10px">
+            <img id="persona-a" src="images/ux-persona-cli-b.svg" style="width:96%"/>
+            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona A</p>
         </a>
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Empathize</h2>
+        <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:32px 0px 0px; opacity: 1;">"I appreciate a terminal's minimalistic essence which ceases distractions."</p>        
+        <p id="subtext" style="text-align:center; font-weight:500; letter-spacing:0.3px; line-height:20px; margin:32px 0px 48px; width:88% !important;">User</p>
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Define</h2>
+        <hr color="#e5e3e2" size="0.8px">
+        <!-- end 'empathize' stage -->
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Ideate</h2>
+        <!-- 'define' stage -->
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding:10px 0 10px;">Define</h2>
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
+        <p id="subtext">A terminal window has to retain a root essence of minimalism while creating functionality to complete edge case tasks without workflow compromise.</p>
+        <!-- end 'define 'stage' -->
+    
+        <!-- 'ideate' stage -->
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding:10px 0 10px;">Ideate</h2>
 
-        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Test</h2>
+        <p id="subtext" style="text-align:center;"><em>How might we create a set of widgets? .. How might we let these widgets have a diminuitive UI which hides well?</em></p>
+        <br><p id="subtext">Crazy 8s, a UX design method, is a fast sketching idea generator which challenges people to sketch eight distinct ideas in eight minutes. This Crazy 8s exercise, was to generate eight sketches of unique widget ideas for a terminal window. </p>
+
+        <a style="display:block; padding:10px 0 10px;">
+
+            <div id="desktop" style="display:flex; align-items:center; justify-content:center; width:64%; gap:1.5em;">
+                <img src="images/clipboard-icon.svg"/>
+                <img src="images/pinned-history-icon.svg"/>
+                <img src="images/calculator-icon.svg"/>
+                <img src="images/release-notes-icon.svg"/>
+                <img src="images/list-icon.svg"/>
+                <img src="images/chatbot-icon.svg"/>
+                <img src="images/email-icon.svg"/>
+                <img src="images/notes-icon.svg"/>
+            </div>
+
+            <div id="mobile" style="display:flex; align-items:center; justify-content:center; width:64%; gap:2em;">    
+                <img src="images/clipboard-icon.svg"/>
+                <img src="images/pinned-history-icon.svg"/>
+                <img src="images/calculator-icon.svg"/>
+                <img src="images/release-notes-icon.svg"/>
+                <img src="images/list-icon.svg"/>
+                <img src="images/chatbot-icon.svg"/>
+                <img src="images/email-icon.svg"/>
+                <img src="images/notes-icon.svg"/>
+            </div>
+
+            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Widget icons</p>
+        </a>
+
+        <p id="subtext">As to a diminuitive user interface, widgets will shape as a tab at the edge of the terminal window and a user may click each tab extending a widget into place.</p>
+
+        <!-- 'prototype' stage -->
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding:10px 0 10px;">Prototype</h2>
+
+        <p id="subtext">A high-fidelity prototype was made with Figma. <em>Below</em></p>
+
+        <a style="display:block; padding:10px 0 10px;">
+            <img src="images/presentation-widgets.svg" id="desktop" style="width:56%;"/>
+            <img src="images/presentation-widgets.svg" id="mobile" style="width:96%;"/>
+            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Every color for each widget are known hexadecimals for a terminal window.</p>
+        </a>
+
+        <p id="subtext">Because some widgets may utilise APIs (i.e. Wolfram Alpha, or a known AI chatbot), the terminal window is a connected design. Other Internet utilisations may mean email or a path to locate software release notes.</p>
+
+        <div style="display:flex; align-items:center; justify-content:center; width:64%; gap:2.5em; padding:20px 0 20px">
+            <video id="desktop" controls width="50%" muted="true" autoplay="true" loop="true" style="display:block; margin:0;">
+                <source src="videos/widgets-prototype-left.webm" type="video/webm">
+                <!-- <source src="videos/sarc-app-walkthrough.mp4" type="video/mp4"> -->
+            </video>
+
+            <video id="desktop" controls width="50%" muted="true" autoplay="true" loop="true" style="display:block; margin:0;">
+                <source src="videos/widgets-prototype-top.webm" type="video/webm">
+                <!-- <source src="videos/sarc-app-walkthrough.mp4" type="video/mp4"> -->
+            </video>
+        </div>
+
+        <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 10px;">Prototype</p>
+
+        <p id="subtext">Smaller widgets can fit in pairs along the vertical sides of the terminal while larger widgets (i.e. clipboard, email, notepad, software release notes) require to fit along the horizontal lines. Users are free to delete underutilized widgets while later adding widgets in a need basis.</p>
+        <!-- end 'prototype' stage -->
+
+        <!-- 'test' stage -->
+        <h2 style="font-weight:400; font-size:24px; line-height:36px; padding:10px 0 10px;">Test</h2>
+
+        <p id="subtext">Editing...</p>
+        <!-- <p id="subtext">While testing, a primary takeaway was an evident edge case of users preferring a terminal window occupying the whole screen.</p> -->
+
+        <hr color="#e5e3e2" size="0.8px">
+        <br><p id="subtext">Last updated: May, 2023</p>
     </body>
 
     <footer id="mobile" style="display:block; -webkit-tap-highlight-color:transparent;">
