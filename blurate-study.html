@@ -7,10 +7,6 @@
         <link rel="stylesheet" href="CaseStudy.css" media="screen">
 
         <style>
-            /*::selection {
-                background: #E9E0DE;
-            }*/
-
             #badge-flex {
                 display: flex;
                 align-items: center;
@@ -39,6 +35,7 @@
 
         <a id="desktop" style="display:block; -webkit-tap-highlight-color: transparent;">
             <br><center><img src="images/blurate-thumbnail.svg"/><br>
+
             <h2 style="font-size:28.025px; color:#000000; letter-spacing:0.3px; line-height:42.0375px; font-weight:550; text-align:center; margin:46.5214px 0 23.2607px">blur-ATE</h2>
         </a>
         <!-- end project thumbnails -->
@@ -67,18 +64,16 @@
         <p id="subtext">Museums often act iteratively with 'pop-up' like exhibitions focusing different themes: modernized buildings with new layouts, new collections, retrospective politics, new artists, new archaelogical findings, loan items from foreign organisations et cetera.</p>
 
         <div id="desktop" style="display:block; margin:10px 0 10px;">
-            <video controls width="64%" muted="true" autoplay="true" loop="true">
+            <video id="desktop" controls width="64%" muted="true" autoplay="true" loop="true">
                 <source src="videos/nytimes-scroll.webm" type="video/webm">
             </video>
-            <p id="subtext" style="display:block; text-align:center; width:100%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">The New York Times posted fifty-five detailed articles about art exhibit topics in february, 2023 alone.</p>
-        </div>
 
-        <div id="mobile" style="display:block; margin:10px 0 10px;">
-            <video controls width="96%" muted="true" autoplay="true" loop="true">
+            <video id="mobile" controls width="96%" muted="true" autoplay="true" loop="true">
                 <source src="videos/nytimes-scroll-mobile.webm" type="video/webm">
                 <source src="videos/nytimes-scroll-mobile.mp4" type="video/mp4">
             </video>
-            <p id="subtext" style="display:block; text-align:center; width:88%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">The New York Times posted fifty-five detailed articles about art exhibit topics in february, 2023 alone.</p>
+
+            <p id="subtext" style="display:block; text-align:center; width:100%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">The New York Times posted fifty-five detailed articles about art exhibit topics in february, 2023 alone.</p>
         </div>
 
         <p id="subtext">Even if any relative controversy occurs in the art world, a curator's perspective may be a highly sought after inquiry for comment.</p>
@@ -98,6 +93,7 @@
         <div id="badge-flex">
             <a>
                 <img src="images/blurate-critic.svg"/>
+
                 <p id="subtext" style="display:block; text-align:center; width:100%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Press badge: first-person perspective</p>
             </a>
     
@@ -107,6 +103,7 @@
 
             <a>
                 <img src="images/blurate-curator.svg"/>
+
                 <p id="subtext" style="display:block; text-align:center; width:100%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Curator badge: second-person perspective</p>
             </a>
         </div>
@@ -120,13 +117,14 @@
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
         
         <p id="subtext">A high-fidelity prototype was made with Figma. <em>Below</em></p>
-        <!-- desktop high-fidelity screens -->
+
         <a id="desktop" style="display:block; margin:10px 0 10px;">
             <img src="images/blurate-hifi-frames.svg" style="width:80%;"/>
+
             <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 10px;">Frame 1 represents a login screen. Frame 2 is the primary screen being the homepage. Frame 3 is a 'news' screen. Frame 4 is an overlay of a digitized badge initialized by the kebab.</p>
             <p id="subtext">A login screen will hint and introduce the primary colors of the app being a charcoal (#424242) and a dullish pink (#E9E0DE). <em>See Frame 1 above</em><br><br>Another screen will represent the homepage with, at center, an image carousel of any example within any given exhibit. Clicking the exhibit image points directly to a corresponding exhibit summary page, and within such page is a path to view the curator's badge. A hard search is available at the top of the screen. <em>See Frame 2 above</em><br><br>Underneath the image carousel is a type of filter as any user may tap keywords to narrow a type of exhibit through medium, style, period, ex. 'sculpture', 'realism', 'italian renaissance'.<br><br>Available to each user is a news feed with latest topics in the art world. Any user can hard search a keyword or news outlet. <em>See Frame 3 above</em></p>
         </a>
-        <!-- mobile high-fidelity screens -->
+  
         <a id="mobile">
             <img src="images/blurate-hifi-mobile-a.svg" style="width:96%; margin:10px 0 10px;"/>
             <p id="subtext">A login screen will hint and introduce the primary colors of the app being a charcoal (#424242) and a dullish pink (#E9E0DE). <em>See Frame 1 above</em><br><br>Another screen will represent the homepage with, at center, an image carousel of any example within any given exhibit. Clicking the exhibit image points directly to a corresponding exhibit summary page, and within such page is a path to view the curator's badge. A hard search is available at the top of the screen. <em>See Frame 2 above</em><br><br>Underneath the image carousel is a type of filter as any user may tap keywords to narrow a type of exhibit through medium, style, period, ex. 'sculpture', 'realism', 'italian renaissance'.</p>
@@ -139,6 +137,7 @@
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Test</h2>
 
         <p id="subtext">This application approach and interface prototype will have to, through time and feedback, existentially resolve four scenarios to have a proof of concept:</p>
+
         <ul style="width:88%;">
             <li id="subtext"><span style="font-weight:700">Responsiveness&ensp;</span>Are museum curators responsive to the idea of free private exhibit walkthroughs, interviews or inquiries for comment?</li>
             <li id="subtext"><span style="font-weight:700">Community&ensp;</span>Is there enough demand of the press to justify implementing this interface?</li>
@@ -148,6 +147,7 @@
         <!-- end 'test' stage -->
 
         <hr color="#e5e3e2" size="0.8px">
+
         <br><p id="subtext">Last updated: May, 2023</p>
     </body>
 

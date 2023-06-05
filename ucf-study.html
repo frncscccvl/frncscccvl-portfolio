@@ -7,14 +7,6 @@
         <link rel="stylesheet" href="CaseStudy.css" media="screen">
 
         <style>
-            /*::selection {
-                background: #FDD663;
-            }*/
-    
-            #sarc-ca {
-                width: 56%;
-            }
-
             #sarc-sticker-div {
                 padding:1.5em 0 3em;
                 width: 96%;
@@ -29,10 +21,6 @@
             }
 
             @media screen and (max-width: 800px) {
-                #sarc-ca {
-                    width: 100%;
-                }
-
                 #sarc-sticker-div {
                     flex-direction: column;
                     gap: 1.5em;
@@ -59,6 +47,7 @@
 
         <a id="desktop" style="-webkit-tap-highlight-color: transparent">
             <br><center><img src="images/ucf-thumbnail.svg"/><br>
+
             <h2 style="font-size:28.025px; color:#000000; letter-spacing:0.3px; line-height:42.0375px; font-weight:550; text-align:center; margin:46.5214px 0 23.2607px">SARC-Sticker</h2>
         </a>
 
@@ -82,8 +71,8 @@
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Empathize</h2>
 
         <p id="subtext">Given how the heights of both society and Internet have come to integrate, an obvious scenario was to question how the individual student and Internet integral is configured in an existing university culture, respectfully.</p>
-
         <p id="subtext">Twenty sophomore students were given a questionnaire via Google Forms with some example questions being:</p>
+
         <ul>
             <li>Which online social-network resonates with you most? Why?</li>
             <li>Did social-networking online create academic distractions your first semester? If yes, how?</li>
@@ -91,6 +80,7 @@
         </ul>
 
         <p id="subtext">After synthesizing results, common insights were:</p>
+
         <ul>
             <li>Transitioning into a cultured university creates a sense of shellshock or forms an edge</li>
             <li>Social-media online is a broad paint stroke</li>
@@ -101,30 +91,34 @@
         <div id="desktop" style="display:flex; width:76%; padding:10px 0px 10px; gap:8px;">
             <a>
                 <img id="persona-a" src="images/ux-persona-sarc-b.svg" style="width:100%"/>
+
                 <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona A</p>
             </a>
 
             <a>
                 <img id="persona-b" src="images/ux-persona-sarc-a.svg" style="width:100%"/>
+
                 <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona B</p>
             </a>
         </div>
 
         <a id="mobile" style="padding:10px 0px 10px">
-            <img id="persona-a" src="images/ux-persona-sarc-b.svg" style="width:100%"/>
+            <img id="persona-a" src="images/ux-persona-sarc-b.svg" style="width:96%"/>
+
             <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Persona A</p>
         </a>
-
         
-        <!-- 'Define' stage -->
+        <!-- 'define' stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Define</h2>
 
         <p id="subtext">Ultimately, pain points were surrounding an apex at Internet and university culture. An online social-networking pivot was necessary to filter the needs of a particular user set, being incoming freshmen, and a recalibration of the Internet and university culture integral.</p>
+        <!-- end 'define' stage --?
 
-        <!-- 'Ideate' stage -->
+        <!-- 'ideate' stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Ideate</h2>
 
         <p id="subtext">An example of an ideation technique utilised in this design was the ‘how might we…’ exercise. A ‘how might we…’ exercise begins with a problem statement only to break that larger challenge into smaller actionable pieces, as a divide and conquer approach.</p>
+
         <ul>
             <li>How might we create an interface to help faculty identify/empathize with students?</li>
             <li>How might we, as an interface, let each student personalize a UX design style 'stickersheet'?</li>
@@ -132,14 +126,23 @@
         </ul>
 
         <p id="subtext">As a resolve via sole concept and design, each student will create a user experience design style ‘sticker-sheet’ which would instead feature personal attributes, ex. a color palette, cards written with a favorite typeface, an example of a recent Spotify playlist, a photograph, an ability to share lecture notes and other features. This aggregate of stickersheets would then compile into an internal social-network to create a local economy of empathy and ultimately help passing rates.<br><br>A competitive audit was conducted in order to identify limitations of large-tech social-networks in production, only to create an upper bound for this design and help justify an internal social-network. <em>See below</em></p>
-        <center><img id="sarc-ca" src="images/sarc-competitive-audit.svg" style="display:block; padding:10px 0px 0px;"/>
-        <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Competitive audit</p>
 
+        <a style="padding:10px 0 0;">
+            <center><img id="desktop" src="images/sarc-competitive-audit.svg" style="display:block; width:56%;"/>
+            <center><img id="mobile" src="images/sarc-competitive-audit.svg" style="display:block; width:96%;"/>
+
+            <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400;">Competitive audit</p>
+        </a>
+        <!-- end 'ideate' stage -->
+
+        <!-- 'sarc-sticker exemplar' stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">SARC-Sticker Exemplar</h2>
+
         <p id="subtext" style="display:block">As to this design, the user population will have the same stickersheet template for the sake of organization and ease of use. A user will only need to fill the blanks. Contrary to the belief of a too restrictive template to a whole user set, as this design is meant to be fleeting, given only to first year students.<br><br>This 'stickersheet' template is similar to my mobile portfolio interface. Hooray, for reusable components!</p>
 
         <div id="sarc-sticker-div" style="display:flex; width:96%; align-items:center; justify-content:center">
             <img id="sarc-sticker-exemplar" src="images/sarc-sticker-exemplar.svg"/>
+
             <ol id="sarc-sticker-ol">
                 <li style="width:100%; margin:2% 0 2%;">A clear image of each user.</li><br>
                 <li style="width:100%; margin:2% 0 2%;">Relevant icons with color-accessible vectors pointing to each subject matter.</li><br>
@@ -151,11 +154,14 @@
         </div>
 
         <hr color="#e5e3e2" size="0.8px">
+
         <p id="subtext" style="font-size:34px; line-height:40px; text-align:center; margin:32px 0px 16px; opacity: 1;">No advertisements, No gimmicks</p>    
         <p id="subtext">Note the absence of any lineage to external social-networks, i.e. Twitter, Instagram, Facebook et cetera.</p>
+        <!-- end 'sarc-sticker exemplar' stage -->
 
         <!-- 'prototype' stage -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Prototype</h2>
+
         <p id="subtext">A high-fidelity prototype was made with Figma.<em> Below</em></p><br>
 
         <div id="desktop" style="display:flex; width:56%; align-items:center; justify-content:center; margin:10px 0 2em; gap:4%;">
@@ -170,6 +176,7 @@
                 <video controls width="360px" muted="true" autoplay="true" loop="true">
                     <source src="videos/sarc-app-walkthrough-ii.webm" type="video/webm">
                 </video>
+
                 <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 0;">A user can filter their feed with a specific course from their class schedule</p>
             </a>
         </div>
@@ -179,16 +186,21 @@
                 <source src="videos/sarc-app-walkthrough.webm" type="video/webm">
                 <source src="videos/sarc-app-walkthrough.mp4" type="video/mp4">
             </video>
+
             <p id="subtext" style="text-align:center; width:56%; font-size:14px; line-height:20px; letter-spacing:0.2px; font-weight:400; margin:8px 0 10px;">General walkthrough of app</p>
         </div>
 
         <p id="subtext">A general feed represents students and teacher assistants from a user's class schedule for the semester, plus items from clubs and organizations (i.e. robotics club, men's baseball, women's basketball) featuring their home schedules and some statistics.</p>
+        <!-- end 'prototype' stage -->
 
+        <!-- 'takeaways stage' -->
         <h2 style="font-weight:400; font-size:24px; line-height:36px; padding: 10px 0 10px;">Takeaways</h2>
 
         <p id="subtext">Because the 'SARC-Sticker' social-network is internal, assisting users and observing abuse becomes simplified.</p>
+        <!-- end 'takeaways' stage -->
 
         <hr color="#e5e3e2" size="0.8px">
+
         <br><p id="subtext">Last updated: May, 2023</p>
     </body>
 
