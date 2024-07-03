@@ -15,9 +15,9 @@
                 line-height: 1;
             }
 
-            iframe {
+            /*iframe {
                 margin: auto auto;
-            }
+            }*/
 
             img {
                 max-width: 100%;
@@ -36,11 +36,11 @@
                 padding: 4em 0px 0px;
             }
 
-            .iframe-link iframe {
+            /*.iframe-link iframe {
                 display: none;
-            }
+            }*/
 
-            .iframe-link:hover iframe {
+            /*.iframe-link:hover iframe {
                 -webkit-animation: slow 1.6s;
                    -moz-animation: slow 1.6s; 
                     -ms-animation: slow 1.6s; 
@@ -48,7 +48,7 @@
                         animation: slow 1.6s;
 
                 display: block;
-            }
+            }*/
 
             .desktop-project-card {
                 display: flex;
@@ -197,10 +197,10 @@
                 opacity: 1;
             }
 
-            @keyframes slow {
+            /*@keyframes slow {
                 from { opacity: 0; }
                 to   { opacity: 1; }
-            }
+            }*/
         </style>
 
         <!-- text in browser tab -->
@@ -252,35 +252,47 @@
 
             <div id="desktop" class="project-cards-desktop">
                 <div class="desktop-project-card">
-                    <img src="images/ucf-icon-desktop.svg" class="layer-0"/>
-                    <a class="iframe-link">
+                    <a target="_blank" href="ucf-study.html">
+                        <img src="images/ucf-icon-desktop.svg" class="layer-0"/>
+                    </a>
+
+                    <!--<a class="iframe-link">
                         <img src="images/decoy.png" class="layer-1"/>
                         <iframe src="ucf-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
-                    </a>
+                    </a>-->
                 </div>
 
                 <div class="desktop-project-card">
-                    <img src="images/blurate-icon-desktop.svg" class="layer-0"/>
-                    <a class="iframe-link">
+                    <a target="_blank" href="blurate-study.html">
+                        <img src="images/blurate-icon-desktop.svg" class="layer-0"/>
+                    </a>
+
+                    <!-- <a class="iframe-link">
                         <img src="images/decoy.png" class="layer-1"/>
                         <iframe src="blurate-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
-                    </a> 
+                    </a> -->
                 </div>
             
                 <div class="desktop-project-card">
-                    <img src="images/portfolio-icon-desktop.svg" class="layer-0"/>
-                    <a class="iframe-link">
+                    <a target="_blank" href="portfolio-study.html">
+                        <img src="images/portfolio-icon-desktop.svg" class="layer-0"/>
+                    </a>
+
+                    <!-- <a class="iframe-link">
                         <img src="images/decoy.png" class="layer-1"/>
                         <iframe src="portfolio-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
-                    </a>
+                    </a> -->
                 </div> 
 
                 <div class="desktop-project-card">
-                    <img src="images/cli-icon-desktop.svg" class="layer-0"/>
-                    <a class="iframe-link">
+                    <a target="_blank" href="cli-study.html">
+                        <img src="images/cli-icon-desktop.svg" class="layer-0"/>
+                    </a>
+
+                    <!-- <a class="iframe-link">
                         <img src="images/decoy.png" class="layer-1"/>
                         <iframe src="cli-study.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:88%; height:100%; border:none; padding:0; overflow:hidden; z-index:999999;"></iframe>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>

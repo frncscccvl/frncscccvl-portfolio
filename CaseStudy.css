@@ -40,15 +40,15 @@ hr {
     width: 56%;
 }
 
-.home-redirect {
+/*.home-redirect {
     position: fixed;
     bottom:2%; 
     left:0.75%;    
-}
+}*/
 
-.home-redirect:hover {
+/*.home-redirect:hover {
     transform: translateX(-4%);
-}
+}*/
 
 .project-thumbnails {
     align-items: center;
