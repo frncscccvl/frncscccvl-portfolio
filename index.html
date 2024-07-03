@@ -63,16 +63,17 @@
                 top: 0;
                 left: 0;
                 z-index: 0;
+                cursor: none;
             }
 
-            .desktop-project-card .layer-1 {
+            /*.desktop-project-card .layer-1 {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 z-index: 1;
                 opacity: 0;
                 transform: translate(-50%, -50%);
-            }
+            }*/
 
             .fab {
                 position: fixed;
@@ -253,7 +254,7 @@
             <div id="desktop" class="project-cards-desktop">
                 <div class="desktop-project-card">
                     <a target="_blank" href="ucf-study.html">
-                        <img src="images/ucf-icon-desktop.svg" class="layer-0"/>
+                        <img src="images/ucf-icon-desktop.svg" onmouseover="this.src='images/ucf-icon-desktop-overlay.svg';" onmouseout="this.src='images/ucf-icon-desktop.svg';" class="layer-0"/>
                     </a>
 
                     <!--<a class="iframe-link">
@@ -264,7 +265,7 @@
 
                 <div class="desktop-project-card">
                     <a target="_blank" href="blurate-study.html">
-                        <img src="images/blurate-icon-desktop.svg" class="layer-0"/>
+                        <img src="images/blurate-icon-desktop.svg" onmouseover="this.src='images/blurate-icon-desktop-overlay.svg';" onmouseout="this.src='images/blurate-icon-desktop.svg';" class="layer-0"/>
                     </a>
 
                     <!-- <a class="iframe-link">
@@ -275,7 +276,7 @@
             
                 <div class="desktop-project-card">
                     <a target="_blank" href="portfolio-study.html">
-                        <img src="images/portfolio-icon-desktop.svg" class="layer-0"/>
+                        <img src="images/portfolio-icon-desktop.svg" onmouseover="this.src='images/portfolio-icon-desktop-overlay.svg';" onmouseout="this.src='images/portfolio-icon-desktop.svg';" class="layer-0"/>
                     </a>
 
                     <!-- <a class="iframe-link">
@@ -286,7 +287,7 @@
 
                 <div class="desktop-project-card">
                     <a target="_blank" href="cli-study.html">
-                        <img src="images/cli-icon-desktop.svg" class="layer-0"/>
+                        <img src="images/cli-icon-desktop.svg" onmouseover="this.src='images/cli-icon-desktop-overlay.svg';" onmouseout="this.src='images/cli-icon-desktop.svg';" class="layer-0"/>
                     </a>
 
                     <!-- <a class="iframe-link">
